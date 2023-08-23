@@ -1,0 +1,11 @@
+|contador
+clock => cuentaActual[0].CLK
+clock => cuentaActual[1].CLK
+reset => cuentaActual[0].ALOAD
+reset => cuentaActual[1].ALOAD
+carga[0] => cuentaActual[0].ADATA
+carga[1] => cuentaActual[1].ADATA
+cuenta[0] << cuentaActual[0].DB_MAX_OUTPUT_PORT_TYPE
+cuenta[1] << cuentaActual[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

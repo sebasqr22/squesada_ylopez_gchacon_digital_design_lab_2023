@@ -1,0 +1,54 @@
+module countdown_counter_tb;
+    // Parámetros generales para el test bench
+    localparam [2:0] TEST_CASES = 3;
+
+    // Señales de entrada y salida del test bench
+    logic clk;
+    logic reset;
+    logic [5:0] load_value;
+    logic [5:0] count;
+
+    // Instancia del contador bajo prueba
+    countdown_counter #(6) dut (
+        .clk(clk),
+        .reset(reset),
+        .load_value(load_value),
+        .count(count)
+    );
+
+    // Generación de clock
+    initial begin
+        clk = 0;
+        forever #5 clk = ~clk;
+    end
+
+    // Test cases
+    initial begin
+        // Inicio de simulación
+        $display("Starting test bench...");
+
+        for (int test = 0; test < TEST_CASES; test = test + 1) begin
+            case (test)
+                0: load_value = 6'b10;    // 2 bits
+                1: load_value = 6'b1100;  // 4 bits
+                2: load_value = 6'b101010; // 6 bits
+                default: load_value = 6'b0;
+            endcase
+
+            // Configurar los valores iniciales
+            reset = 1;
+
+            // Esperar un ciclo de reloj y luego desactivar el reset
+            #5 reset = 0;
+
+            // Simular algunos ciclos
+            #20;
+            
+            // Mostrar resultados
+            $display("Load Value: %b, Count: %b", load_value, count);
+        end
+
+        // Terminar la simulación
+        #10 $finish;
+    end
+endmodule
