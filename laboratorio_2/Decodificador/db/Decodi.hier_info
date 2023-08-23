@@ -1,14 +1,14 @@
 |sieteSeg
-data[0] => Decoder0.IN3
-data[1] => Decoder0.IN2
-data[2] => Decoder0.IN1
-data[3] => Decoder0.IN0
-segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
-segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
-segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
-segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
-segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
-segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
-segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => Decoder0.IN3
+x[1] => Decoder0.IN2
+x[2] => Decoder0.IN1
+x[3] => Decoder0.IN0
+salida[0] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+salida[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+salida[5] <= salida.DB_MAX_OUTPUT_PORT_TYPE
+salida[6] <= salida.DB_MAX_OUTPUT_PORT_TYPE
 
 
