@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/simulation/modelsim
+vcontador
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1692860100
+!i10b 1
+!s100 XM[MABmMJVXo[bFE2f@GP0
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IkfiaKG`C]A6DESH1T542_0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+w1692859610
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv
+!i122 0
+L0 1 22
+Z5 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z6 !s108 1692860100.000000
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador
+Z9 tCvgOpt 0
+vcontador_tb
+R1
+R2
+!i10b 1
+!s100 Tn:F15YN<E0ZEdfj^`b`X0
+R3
+ID@bTiAZRlM[KJW<B4M11g3
+R4
+S1
+R0
+w1692858792
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv
+!i122 3
+L0 1 57
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv|
+!i113 1
+R7
+R8
+R9
+vdisplay
+R1
+R2
+!i10b 1
+!s100 0J;_4nlg4g=KE^dYo0>C]3
+R3
+I@DhVG3KHZn3S2n0B`YV:S3
+R4
+S1
+R0
+w1692855077
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv
+!i122 1
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv|
+!i113 1
+R7
+R8
+R9
+vfuncional
+R1
+R2
+!i10b 1
+!s100 F>8K;]G30DG>aadFd:N8X2
+R3
+IogH1IC_:L<]_aWHbYC5;g3
+R4
+S1
+R0
+w1692859992
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv
+!i122 2
+L0 1 8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv|
+!i113 1
+R7
+R8
+R9
