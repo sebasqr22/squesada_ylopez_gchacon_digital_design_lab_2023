@@ -12,36 +12,32 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:32:22 on Aug 23,2023
+# Start time: 22:48:17 on Aug 23,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv 
 # -- Compiling module contador
 # 
 # Top level modules:
 # 	contador
-# End time: 19:32:22 on Aug 23,2023, Elapsed time: 0:00:00
+# End time: 22:48:17 on Aug 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:32:22 on Aug 23,2023
+# Start time: 22:48:17 on Aug 23,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv 
 # -- Compiling module contador_tb
 # 
 # Top level modules:
 # 	contador_tb
-# End time: 19:32:22 on Aug 23,2023, Elapsed time: 0:00:00
+# End time: 22:48:17 on Aug 23,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  contador_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" contador_tb 
-# Start time: 19:32:22 on Aug 23,2023
+# Start time: 22:48:17 on Aug 23,2023
 # Loading sv_std.std
 # Loading work.contador_tb
 # Loading work.contador
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'carga'. The port definition is at: C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv(4).
-#    Time: 0 ps  Iteration: 0  Instance: /contador_tb/dut File: C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv Line: 10
-# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (2) for port 'cuenta'. The port definition is at: C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /contador_tb/dut File: C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv Line: 10
 # 
 # add wave *
 # view structure
@@ -49,7 +45,10 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Testing for 4 bits...
-# Carga: 11, Cuenta: 11
-# End time: 19:32:45 on Aug 23,2023, Elapsed time: 0:00:23
-# Errors: 0, Warnings: 2
+# p1 correcto
+# p2 correcto
+# p3 correcto
+# Break key hit
+# Simulation stop requested.
+# End time: 22:48:42 on Aug 23,2023, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 0
