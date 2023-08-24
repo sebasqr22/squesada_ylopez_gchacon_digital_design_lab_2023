@@ -12,29 +12,49 @@
 # 
 # vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:48:17 on Aug 23,2023
+# Start time: 00:55:00 on Aug 24,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv 
 # -- Compiling module contador
 # 
 # Top level modules:
 # 	contador
-# End time: 22:48:17 on Aug 23,2023, Elapsed time: 0:00:00
+# End time: 00:55:00 on Aug 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:55:00 on Aug 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/display.sv 
+# -- Compiling module display
+# 
+# Top level modules:
+# 	display
+# End time: 00:55:00 on Aug 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:55:00 on Aug 24,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/funcional.sv 
+# -- Compiling module funcional
+# 
+# Top level modules:
+# 	funcional
+# End time: 00:55:00 on Aug 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:48:17 on Aug 23,2023
+# Start time: 00:55:00 on Aug 24,2023
 # vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador" C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador_tb.sv 
 # -- Compiling module contador_tb
 # 
 # Top level modules:
 # 	contador_tb
-# End time: 22:48:17 on Aug 23,2023, Elapsed time: 0:00:00
+# End time: 00:55:00 on Aug 24,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  contador_tb
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" contador_tb 
-# Start time: 22:48:17 on Aug 23,2023
+# Start time: 00:55:01 on Aug 24,2023
 # Loading sv_std.std
 # Loading work.contador_tb
 # Loading work.contador
@@ -49,6 +69,6 @@
 # p2 correcto
 # p3 correcto
 # Break key hit
-# Simulation stop requested.
-# End time: 22:48:42 on Aug 23,2023, Elapsed time: 0:00:25
+# Break in Module contador at C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/laboratorio_2/Contador/contador.sv line 10
+# End time: 00:55:17 on Aug 24,2023, Elapsed time: 0:00:16
 # Errors: 0, Warnings: 0

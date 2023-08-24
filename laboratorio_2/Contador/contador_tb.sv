@@ -30,9 +30,7 @@ module contador_tb();
 		clock = 0; #10;
 	
 		assert (carga == 6'b111111)else $error("fallo prueba 1");
-		
 		assert (carga2 == 4'b1111)else $error("fallo prueba 2");
-		
 		assert (cuenta3 == 2'b11)else $error("fallo prueba 3");
 		
 		
@@ -43,22 +41,15 @@ module contador_tb();
 		
 		assert(cuenta == carga-2'b10) else $error("error");
 		$display("p1 correcto");
-		
 		assert(cuenta2 == carga2-2'b10) else $error("error");
 		$display("p2 correcto");
-		
 		assert(carga3== cuenta3-2'b10) else $error("error");
 		$display("p3 correcto");
 		
 		
 	end
-	
-	
 	always begin
-	
 		clock = !clock; #10;
-		
-	
 	end
 	
 	
