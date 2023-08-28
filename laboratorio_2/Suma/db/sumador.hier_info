@@ -1,0 +1,61 @@
+|four_bit_adder
+a[0] => fulladder:FA0.a
+a[1] => fulladder:FA1.a
+a[2] => fulladder:FA2.a
+a[3] => fulladder:FA3.a
+b[0] => fulladder:FA0.b
+b[1] => fulladder:FA1.b
+b[2] => fulladder:FA2.b
+b[3] => fulladder:FA3.b
+cin => fulladder:FA0.cin
+sum[0] << fulladder:FA0.s
+sum[1] << fulladder:FA1.s
+sum[2] << fulladder:FA2.s
+sum[3] << fulladder:FA3.s
+cout << fulladder:FA3.cout
+
+
+|four_bit_adder|fulladder:FA0
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|fulladder:FA1
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|fulladder:FA2
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|four_bit_adder|fulladder:FA3
+a => p.IN0
+a => g.IN0
+b => p.IN1
+b => g.IN1
+cin => s.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
