@@ -1,0 +1,11 @@
+module alu (input logic [3:0] A, input logic [3:0] B, input logic [3:0] sel, output logic OF, output logic carry, output logic cero, output logic neg, output logic [3:0] result);
+
+ShiftLeft #(N)  inst_sl (.A(A), R)
+CompAnd #(N)  inst_and (A, B, R)
+CompXor#(N)  inst_xor (A, B, R)
+CompOr#(N)  inst_or (A, B, R)
+ShiftRight #(N)  inst_sr (A, R)
+mult #(N)  inst_mult ( A, B, R)
+div #(N)  inst_div ( A,  B,  R)
+mod #(N)  inst_mod ( A, B, R)
+resta #(N)  inst_resta ( A, B, R) 

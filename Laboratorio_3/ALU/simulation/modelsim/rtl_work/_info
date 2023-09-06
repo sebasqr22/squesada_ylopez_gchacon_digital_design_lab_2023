@@ -1,0 +1,35 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/User/Desktop/Lab 3/ALU/simulation/modelsim
+vmult
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1693497192
+!i10b 1
+!s100 A<SjEX@AB>Zf36Gb4WeXC3
+IZ2D;kjemWc7ez3Z_]e8WZ1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 mult_sv_unit
+S1
+R0
+w1693497163
+8C:/Users/User/Desktop/Lab 3/ALU/mult.sv
+FC:/Users/User/Desktop/Lab 3/ALU/mult.sv
+L0 1
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1693497191.000000
+!s107 C:/Users/User/Desktop/Lab 3/ALU/mult.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/User/Desktop/Lab 3/ALU|C:/Users/User/Desktop/Lab 3/ALU/mult.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work {+incdir+C:/Users/User/Desktop/Lab 3/ALU}
+tCvgOpt 0

@@ -1,0 +1,15 @@
+|mult
+A[0] => Mult0.IN2
+A[1] => Mult0.IN1
+A[2] => Mult0.IN0
+B[0] => Mult0.IN5
+B[1] => Mult0.IN4
+B[2] => Mult0.IN3
+R[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+R[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+R[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+
+

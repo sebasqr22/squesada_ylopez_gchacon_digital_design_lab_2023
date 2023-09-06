@@ -1,0 +1,5 @@
+module ShiftLeft #(parameter N = 3) (input logic [N-1:0] A, output logic [N-1:0] R);
+
+assign  R = A<<1;
+
+endmodule
