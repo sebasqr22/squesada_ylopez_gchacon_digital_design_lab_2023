@@ -1,0 +1,28 @@
+module NBitAdder #(parameter N = 4) (
+  input [N-1:0] A,
+  input [N-1:0] B,
+  input Cin,
+  output [N:0] Sum,
+  output Cout
+);
+  wire [N:0] carry_;
+  wire [N-1:0] sum;
+  integer i;
+
+  assign carry_[0] = Cin;
+  
+  generate
+    for (int i = 0; i < N; i = i + 1) begin
+      FullAdder #(1) FA_inst (
+        .A(A[i]),
+        .B(B[i]),
+        .Cin(carry_[i]),
+        .Sum(sum[i]),
+        .Cout(carry_[i+1])
+      );
+    end
+  endgenerate
+
+  assign Sum = {carry_[N], sum};
+  assign Cout = carry_[N];
+endmodule
