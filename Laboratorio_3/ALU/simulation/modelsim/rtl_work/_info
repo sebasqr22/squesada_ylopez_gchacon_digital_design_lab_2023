@@ -11,15 +11,15 @@ cModel Technology
 Z0 dC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/simulation/modelsim
 valu_tb
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1694506732
+Z2 !s110 1694507247
 !i10b 1
-!s100 TMiTCfPiFV`hj[=4V@kkA2
+!s100 762Tgo5QHA@L@EOSba3Ak1
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I<MHRHacX?;fj]Id3CgX3I3
+IgX0kk_QCDdEEWDFaW81A@0
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1694506544
+w1694507172
 8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv
 FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv
 !i122 0
@@ -28,7 +28,7 @@ Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1694506731.000000
+!s108 1694507246.000000
 !s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv|
 !i113 1
@@ -54,7 +54,7 @@ R5
 r1
 !s85 0
 31
-Z10 !s108 1694506732.000000
+Z10 !s108 1694507247.000000
 !s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv|
 !i113 1
@@ -145,7 +145,7 @@ R8
 n@full@adder
 vmult
 R1
-!s110 1694506733
+!s110 1694507248
 !i10b 1
 !s100 i;X7nYA]mdaSIWMegOI]U1
 R3
@@ -162,7 +162,7 @@ R5
 r1
 !s85 0
 31
-!s108 1694506733.000000
+R10
 !s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/mult.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/mult.sv|
 !i113 1

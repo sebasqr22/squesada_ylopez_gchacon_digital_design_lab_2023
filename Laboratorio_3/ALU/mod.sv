@@ -1,5 +1,11 @@
-module mod #(parameter N = 4) (input logic [N-1:0] A, input logic [N-1:0] B, output logic [N-1:0] R);
+module mod #(
+  parameter N = 4
+)(
+  input wire [N-1:0] Dividendo,
+  input wire [N-1:0] Divisor,
+  output wire [N-1:0] Resultado
+);
 
-assign R = A % B;
+assign Resultado = Dividendo % Divisor;
 
 endmodule

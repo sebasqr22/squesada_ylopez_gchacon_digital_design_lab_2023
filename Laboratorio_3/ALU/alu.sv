@@ -1,7 +1,7 @@
 module alu #(parameter N = 4)(input logic [3:0] A,B, input wire [3:0] sel, output logic OF, output logic carry_, output logic cero, output logic neg, output logic [3:0] result);
 
 
-wire [N-1:0] andR, orR, xorR, multiR, sumaR, shiftLR, shiftRR, restaR, divR;
+wire [N-1:0] andR, orR, xorR, multiR, sumaR, shiftLR, shiftRR, restaR, divR, modR;
 
 CompAnd #(N)  inst_and (.A(A), .B(B), .R(andR));
 CompXor#(N)  inst_xor (.A(A), .B(B), .R(xorR));
@@ -13,6 +13,7 @@ ShiftR#(N)  inst_sr (.A(A), .shift(B), .R(shiftRR));
 //resta#(N)  inst_resta (.A(A), .B(B), .Neg(neg) , .R(restaR));
 
 div#(N)  inst_div (.Dividendo(A), .Divisor(B), .Cociente(divR), .Residuo(cero), .DivisionByZeroError(neg));
+mod#(N)  inst_mod (.Dividendo(A), .Divisor(B), .Resultado(modR));
 
 
 logic [N-1:0] tmp;
@@ -43,8 +44,10 @@ logic [N-1:0] tmp;
 				
 			4'b0111: // DIV
 				tmp = divR;
-			/*
-			4'b1000:
+			
+			4'b1000: // MOD
+				tmp = modR;
+				/*
 			4'b1001:*/
 			default: tmp = andR;
 			
