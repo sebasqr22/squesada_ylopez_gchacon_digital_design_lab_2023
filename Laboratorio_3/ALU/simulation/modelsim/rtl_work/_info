@@ -1,35 +1,144 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/User/Desktop/Lab 3/ALU/simulation/modelsim
-vmult
-DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-!s110 1693497192
+Z0 dC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/simulation/modelsim
+valu
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1694500825
 !i10b 1
-!s100 A<SjEX@AB>Zf36Gb4WeXC3
-IZ2D;kjemWc7ez3Z_]e8WZ1
-VDg1SIo80bB@j0V0VzS_@n1
-!s105 mult_sv_unit
+!s100 :_d;U<ao4ERBK<7Pk:4`;1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IU7DU^3H6ck]eN=`n4FRbM0
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1693497163
-8C:/Users/User/Desktop/Lab 3/ALU/mult.sv
-FC:/Users/User/Desktop/Lab 3/ALU/mult.sv
-L0 1
-OV;L;10.5b;63
+w1694500787
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu.sv
+!i122 4
+L0 1 44
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1693497191.000000
-!s107 C:/Users/User/Desktop/Lab 3/ALU/mult.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/User/Desktop/Lab 3/ALU|C:/Users/User/Desktop/Lab 3/ALU/mult.sv|
+Z6 !s108 1694500825.000000
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu.sv|
 !i113 1
-o-sv -work work
-!s92 -sv -work work {+incdir+C:/Users/User/Desktop/Lab 3/ALU}
-tCvgOpt 0
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU
+Z9 tCvgOpt 0
+valu_tb
+R1
+R2
+!i10b 1
+!s100 ?FI@ZHQMS:>8O<1F3gOPK1
+R3
+I66eZBlX_QlV]d5EO?1Xc61
+R4
+S1
+R0
+w1694500755
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv
+!i122 5
+L0 1 54
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv|
+!i113 1
+R7
+R8
+R9
+vCompAnd
+R1
+!s110 1694500824
+!i10b 1
+!s100 goB4Yh5ezkKQUbAJk]WI^2
+R3
+Iklc<dUj4I9^cemG=Y`?ma3
+R4
+S1
+R0
+w1694498973
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv
+!i122 1
+Z10 L0 1 9
+R5
+r1
+!s85 0
+31
+!s108 1694500824.000000
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv|
+!i113 1
+R7
+R8
+R9
+n@comp@and
+vCompOr
+R1
+R2
+!i10b 1
+!s100 EWj08b0H5aMWkWU`XMNlV2
+R3
+IdXz:<LC4ADSHZ>c6ckzK30
+R4
+S1
+R0
+w1694499037
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompOr.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompOr.sv
+!i122 3
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompOr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompOr.sv|
+!i113 1
+R7
+R8
+R9
+n@comp@or
+vCompXor
+R1
+R2
+!i10b 1
+!s100 =?H[;H7jSzZU4iD[D5A;F1
+R3
+I3Hz>V>H0FSlWoJCYf7iHN2
+R4
+S1
+R0
+w1694499002
+8C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompXor.sv
+FC:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompXor.sv
+!i122 2
+R10
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompXor.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU|C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompXor.sv|
+!i113 1
+R7
+R8
+R9
+n@comp@xor

@@ -1,4 +1,8 @@
-module FullAdder #(parameter N = 3) (input logic A, input logic B, input logic Cin, output logic Sum, output logic [N:0] Cout);
-    assign Sum = A ^ B ^ Cin;
+module FullAdder (input logic A, input logic B, input logic Cin, output logic Sum, output logic Cout);
+    
+	 assign Sum = A ^ B ^ Cin;
+	 
     assign Cout = (A & B) | (B & Cin) | (A & Cin);
-endmodule
+	 
+	 endmodule
+	 

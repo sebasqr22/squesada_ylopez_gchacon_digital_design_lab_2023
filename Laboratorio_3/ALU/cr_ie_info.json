@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFC0C14013E",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffc0c14013d: CCL_MSG + 0x5013d (?write_message@MSG_REPORT_FILE@@QEAA_NPEAVMSG_POST@@@Z + 0x4d)\n\t0x7ffbf0906aae: SYS_QUI + 0x16aae (?save_msg@QUI_DISPLAY@@QEAAXAEBVFIO_PATH@@@Z + 0x18e)\n\t0x7ffbf0924b53: SYS_QUI + 0x34b53 (?qui_save_pro_msg@@YAXXZ + 0x2e3)\n\t0x7ffbf091a527: SYS_QUI + 0x2a527 (?flow_starting_setup@QUI_FRAME_WND@@QEAA_NW4FSTR_FLOW_ENUM@@_N@Z + 0x77)\n\t0x7ffbf0920621: SYS_QUI + 0x30621 (?ntfq_msg_pre_notify_flow_start@QUI_FRAME_WND@@UEAA_N_K_N@Z + 0x191)\n\t0x7ffc1c4d2050: ccl_ntfq + 0x2050 (?dispatch_notify_msg@NTFQ_NOTIFY_TARGET@@IEAA_NPEBVNTFQ_NOTIFY_MAP@@I_K_N@Z + 0x60)\n\t0x7ffc1c4d210b: ccl_ntfq + 0x210b (?on_ntfq_notify@NTFQ_NOTIFY_TARGET@@UEAA_NI_K_N@Z + 0x3b)\n\t0x7ffc1c4d2c71: ccl_ntfq + 0x2c71 (?broadcast_notify@NTFQ_NOTIFY_MGR@@UEAA_NI_K@Z + 0xb1)\n\t0x7ffbfc6facf3: sys_flow + 0x1acf3 (flow_execute_custom + 0x393)\n\t0x7ffb8c2571e9: resr_tmwq + 0x271e9 (?start_next_task@TMWQ_TREE@@IEAAX_N@Z + 0x959)\n\t0x7ffb8c256876: resr_tmwq + 0x26876 (?start@TMWQ_TREE@@IEAA_NPEAVTMWQ_ITEM@@@Z + 0x1d6)\n\t0x7ffb8c24f0bc: resr_tmwq + 0x1f0bc (?on_start@TMWQ_TREE@@IEAAXAEBVQModelIndex@@@Z + 0x39c)\n\t0x7ffb8c24e382: resr_tmwq + 0x1e382 (?on_double_click_text@TMWQ_TREE@@QEAAXAEBVQModelIndex@@@Z + 0x122)\n\t 0x65eed1f0: QtCore4 + 0x11d1f0 (?activate@QMetaObject@@SAXPEAVQObject@@PEBU1@HPEAPEAX@Z + 0x520)\n\t 0x6652e599: QtGui4 + 0x46e599 (?doubleClicked@QAbstractItemView@@IEAAXAEBVQModelIndex@@@Z + 0x29)\n\t 0x66568eab: QtGui4 + 0x4a8eab (?mouseDoubleClickEvent@QTreeView@@MEAAXPEAVQMouseEvent@@@Z + 0x15b)\n\t 0x66121dd8: QtGui4 + 0x61dd8 (?event@QWidget@@MEAA_NPEAVQEvent@@@Z + 0xe8)\n\t 0x664454e6: QtGui4 + 0x3854e6 (?event@QFrame@@MEAA_NPEAVQEvent@@@Z + 0x36)\n\t 0x665387ec: QtGui4 + 0x4787ec (?viewportEvent@QAbstractItemView@@MEAA_NPEAVQEvent@@@Z + 0x4ac)\n\t0x7ffbd7e24d76: GCL_AFCQ + 0xb4d76 (?viewportEvent@AFCQ_TREE_VIEW@@MEAA_NPEAVQEvent@@@Z + 0x2b6)\n\t 0x65ee0552: QtCore4 + 0x110552 (?sendThroughObjectEventFilters@QCoreApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x82)\n\t 0x660e2f81: QtGui4 + 0x22f81 (?notify_helper@QApplicationPrivate@@QEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0xe1)\n\t 0x660e1b8e: QtGui4 + 0x21b8e (?notify@QApplication@@UEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x71e)\n\t 0x65ede67b: QtCore4 + 0x10e67b (?notifyInternal@QCoreApplication@@AEAA_NPEAVQObject@@PEAVQEvent@@@Z + 0x7b)\n\t 0x660e5dee: QtGui4 + 0x25dee (?sendMouseEvent@QApplicationPrivate@@SA_NPEAVQWidget@@PEAVQMouseEvent@@00PEAPEAV2@AEAV?$QPointer@VQWidget@@@@_N@Z + 0x1de)\n\t 0x661469b0: QtGui4 + 0x869b0 (?trUtf8@QScrollBar@@SA?AVQString@@PEBD0H@Z + 0x1440)\n\t 0x6614a361: QtGui4 + 0x8a361 (?winMouseButtonUp@QApplication@@SAXXZ + 0x2761)\n\t0x7ffc239ce857: USER32 + 0xe857 (CallWindowProcW + 0x3f7)\n\t0x7ffc239ce298: USER32 + 0xe298 (DispatchMessageW + 0x258)\n\t 0x65f03982: QtCore4 + 0x133982 (?processEvents@QEventDispatcherWin32@@UEAA_NV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x3e2)\n\t 0x66142074: QtGui4 + 0x82074 (?openPopup@QApplicationPrivate@@QEAAXPEAVQWidget@@@Z + 0x204)\n\t 0x65edb5db: QtCore4 + 0x10b5db (?exec@QEventLoop@@QEAAHV?$QFlags@W4ProcessEventsFlag@QEventLoop@@@@@Z + 0x22b)\n\t 0x65eddbbf: QtCore4 + 0x10dbbf (?exec@QCoreApplication@@SAHXZ + 0xdf)\n\t0x7ff65405198b: quartus + 0x198b (?qgq_main@@YAHHPEAPEBD@Z + 0x8b)\n\t0x7ffc0c103258: CCL_MSG + 0x13258 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffc0c104a5e: CCL_MSG + 0x14a5e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffc0c216af0: ccl_mem + 0x16af0 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffc0c102af1: CCL_MSG + 0x12af1 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff654052777: quartus + 0x2777 (WinMain + 0x127)\n\t0x7ff654051f40: quartus + 0x1f40 (__tmainCRTStartup + 0x148)\n\t0x7ffc23537613: KERNEL32 + 0x17613 (BaseThreadInitThunk + 0x13)\n\t0x7ffc245c26b0: ntdll + 0x526b0 (RtlUserThreadStart + 0x20)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "20.1.1",
+		"build" : "720",
+		"edition" : "Lite Edition"
+	}
+}

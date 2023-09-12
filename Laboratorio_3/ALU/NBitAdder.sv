@@ -1,6 +1,27 @@
-module NBitAdder #(parameter N = 3) (input logic [N-1:0] A, input logic [N-1:0] B, input logic Cin, output logic [N-1:0] Sum, output logic Cout);
-    logic [N:0] Carry;
-    FullAdder #(N) fa_inst [N-1:0] (.A(A), .B(B), .Cin(Cin), .Sum(Sum), .Cout(Carry));
+module NBitAdder #(parameter N = 4)(
+  input [N-1:0] A, // Entrada de N bits
+  input [N-1:0] B, // Entrada de N bits
+  output [N-1:0] Sum, // Salida de N bits
+  output Overflow // Salida de desbordamiento
+);
 
-    assign Cout = Carry[N];
+  wire [N:0] Carry;
+  wire [N-1:0] Sums;
+
+  generate
+    genvar i;
+    for (i = 0; i < N; i = i + 1) begin : gen_full_adders
+      FullAdder FA(
+        .A(A[i]),
+        .B(B[i]),
+        .Cin(Carry[i]),
+        .Sum(Sums[i]),
+        .Cout(Carry[i + 1])
+      );
+    end
+  endgenerate
+
+  assign Sum = Sums;
+  assign Overflow = Carry[N];
+
 endmodule

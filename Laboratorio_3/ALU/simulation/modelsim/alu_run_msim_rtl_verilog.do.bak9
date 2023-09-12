@@ -7,8 +7,6 @@ vmap work rtl_work
 
 vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv}
 vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompAnd.sv}
-vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompXor.sv}
-vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/CompOr.sv}
 vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu.sv}
 
 vlog -sv -work work +incdir+C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU {C:/Users/sebas/Desktop/Taller/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/ALU/alu_tb.sv}

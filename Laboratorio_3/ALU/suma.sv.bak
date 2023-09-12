@@ -1,7 +1,0 @@
-module suma;
-    logic [2:0] A, B, Sum;
-    logic Cin, Cout;
-
-    NBitAdder #(3) adder_inst (.A(A), .B(B), .Cin(Cin), .Sum(Sum), .Cout(Cout));
-
-endmodule

@@ -1,0 +1,36 @@
+module alu_tb;
+
+    logic A, B, sel;
+    logic OF, carry, cero, neg, result;
+
+    // Create an instance of the alu module.
+    alu #(4) alu (.A(A), .B(B), .sel(sel), .OF(OF), .carry(carry), .cero(cero), .neg(neg), .result(result));
+
+    initial begin
+        // Initialize the inputs.
+        A = 0;
+        B = 0;
+        sel = 4'b0000; // AND
+
+        // Generate a testbench stimulus.
+        for (int i = 0; i < 16; i++) begin
+            #10;
+            A = i;
+            B = i;
+        end
+    end
+
+    always @(posedge clk) begin
+        // Check the output.
+        if (A == 0 && B == 0) begin
+            if (result != 0) begin
+                $display("Error: AND gate output should be 0 for inputs 0 and 0.");
+            end
+        end else if (A == 1 && B == 1) begin
+            if (result != 1) begin
+                $display("Error: AND gate output should be 1 for inputs 1 and 1.");
+            end
+        end
+    end
+
+endmodule
