@@ -1,0 +1,362 @@
+|alu_tb
+
+
+|alu_tb|alu:uut
+A[0] => A[0].IN8
+A[1] => A[1].IN8
+A[2] => A[2].IN8
+A[3] => A[3].IN8
+B[0] => B[0].IN8
+B[1] => B[1].IN8
+B[2] => B[2].IN8
+B[3] => B[3].IN8
+sel[0] => Mux0.IN3
+sel[0] => Mux1.IN3
+sel[0] => Mux2.IN3
+sel[0] => Mux3.IN3
+sel[1] => Mux0.IN2
+sel[1] => Mux1.IN2
+sel[1] => Mux2.IN2
+sel[1] => Mux3.IN2
+sel[2] => Mux0.IN1
+sel[2] => Mux1.IN1
+sel[2] => Mux2.IN1
+sel[2] => Mux3.IN1
+sel[3] => Mux0.IN0
+sel[3] => Mux1.IN0
+sel[3] => Mux2.IN0
+sel[3] => Mux3.IN0
+OF <= OF.DB_MAX_OUTPUT_PORT_TYPE
+carry_ <= <GND>
+cero <= div:inst_div.Residuo
+neg <= div:inst_div.DivisionByZeroError
+result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+result[3] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|CompAnd:inst_and
+A[0] => R.IN0
+A[1] => R.IN0
+A[2] => R.IN0
+A[3] => R.IN0
+B[0] => R.IN1
+B[1] => R.IN1
+B[2] => R.IN1
+B[3] => R.IN1
+R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|CompXor:inst_xor
+A[0] => R.IN0
+A[1] => R.IN0
+A[2] => R.IN0
+A[3] => R.IN0
+B[0] => R.IN1
+B[1] => R.IN1
+B[2] => R.IN1
+B[3] => R.IN1
+R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|CompOr:inst_or
+A[0] => R.IN0
+A[1] => R.IN0
+A[2] => R.IN0
+A[3] => R.IN0
+B[0] => R.IN1
+B[1] => R.IN1
+B[2] => R.IN1
+B[3] => R.IN1
+R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|mult:inst_mult
+A[0] => Mult0.IN3
+A[1] => Mult0.IN2
+A[2] => Mult0.IN1
+A[3] => Mult0.IN0
+A[3] => Overflow.IN0
+B[0] => Mult0.IN7
+B[1] => Mult0.IN6
+B[2] => Mult0.IN5
+B[3] => Mult0.IN4
+B[3] => Overflow.IN1
+Producto[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|NBitAdder:inst_nBitAdder
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+Sum[0] <= FullAdder:gen_full_adders[0].FA.Sum
+Sum[1] <= FullAdder:gen_full_adders[1].FA.Sum
+Sum[2] <= FullAdder:gen_full_adders[2].FA.Sum
+Sum[3] <= FullAdder:gen_full_adders[3].FA.Sum
+Overflow <= FullAdder:gen_full_adders[3].FA.Cout
+
+
+|alu_tb|alu:uut|NBitAdder:inst_nBitAdder|FullAdder:gen_full_adders[0].FA
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|NBitAdder:inst_nBitAdder|FullAdder:gen_full_adders[1].FA
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|NBitAdder:inst_nBitAdder|FullAdder:gen_full_adders[2].FA
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|NBitAdder:inst_nBitAdder|FullAdder:gen_full_adders[3].FA
+A => Sum.IN0
+A => Cout.IN0
+A => Cout.IN0
+B => Sum.IN1
+B => Cout.IN1
+B => Cout.IN0
+Cin => Sum.IN1
+Cin => Cout.IN1
+Cin => Cout.IN1
+Sum <= Sum.DB_MAX_OUTPUT_PORT_TYPE
+Cout <= Cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|ShiftL:inst_sl
+A[0] => temp1.DATAA
+A[0] => temp1.DATAB
+A[0] => temp1.DATAA
+A[0] => temp1.DATAA
+A[1] => temp1.DATAA
+A[1] => temp1.DATAB
+A[1] => temp1.DATAA
+A[2] => temp1.DATAA
+A[2] => temp1.DATAB
+A[3] => temp1.DATAB
+shift[0] => LessThan0.IN8
+shift[0] => LessThan1.IN8
+shift[0] => LessThan2.IN8
+shift[0] => LessThan3.IN8
+shift[0] => LessThan4.IN8
+shift[0] => LessThan5.IN8
+shift[0] => LessThan6.IN8
+shift[0] => LessThan7.IN8
+shift[0] => LessThan8.IN8
+shift[0] => LessThan9.IN8
+shift[0] => LessThan10.IN8
+shift[0] => LessThan11.IN8
+shift[0] => LessThan12.IN8
+shift[0] => LessThan13.IN8
+shift[0] => LessThan14.IN8
+shift[0] => LessThan15.IN8
+shift[1] => LessThan0.IN7
+shift[1] => LessThan1.IN7
+shift[1] => LessThan2.IN7
+shift[1] => LessThan3.IN7
+shift[1] => LessThan4.IN7
+shift[1] => LessThan5.IN7
+shift[1] => LessThan6.IN7
+shift[1] => LessThan7.IN7
+shift[1] => LessThan8.IN7
+shift[1] => LessThan9.IN7
+shift[1] => LessThan10.IN7
+shift[1] => LessThan11.IN7
+shift[1] => LessThan12.IN7
+shift[1] => LessThan13.IN7
+shift[1] => LessThan14.IN7
+shift[1] => LessThan15.IN7
+shift[2] => LessThan0.IN6
+shift[2] => LessThan1.IN6
+shift[2] => LessThan2.IN6
+shift[2] => LessThan3.IN6
+shift[2] => LessThan4.IN6
+shift[2] => LessThan5.IN6
+shift[2] => LessThan6.IN6
+shift[2] => LessThan7.IN6
+shift[2] => LessThan8.IN6
+shift[2] => LessThan9.IN6
+shift[2] => LessThan10.IN6
+shift[2] => LessThan11.IN6
+shift[2] => LessThan12.IN6
+shift[2] => LessThan13.IN6
+shift[2] => LessThan14.IN6
+shift[2] => LessThan15.IN6
+shift[3] => LessThan0.IN5
+shift[3] => LessThan1.IN5
+shift[3] => LessThan2.IN5
+shift[3] => LessThan3.IN5
+shift[3] => LessThan4.IN5
+shift[3] => LessThan5.IN5
+shift[3] => LessThan6.IN5
+shift[3] => LessThan7.IN5
+shift[3] => LessThan8.IN5
+shift[3] => LessThan9.IN5
+shift[3] => LessThan10.IN5
+shift[3] => LessThan11.IN5
+shift[3] => LessThan12.IN5
+shift[3] => LessThan13.IN5
+shift[3] => LessThan14.IN5
+shift[3] => LessThan15.IN5
+R[0] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|ShiftR:inst_sr
+A[0] => temp1.DATAB
+A[1] => temp1.DATAB
+A[1] => temp1.DATAA
+A[2] => temp1.DATAB
+A[2] => temp1.DATAA
+A[2] => temp1.DATAA
+A[3] => temp1.DATAB
+A[3] => temp1.DATAA
+A[3] => temp1.DATAA
+A[3] => temp1.DATAA
+shift[0] => LessThan0.IN8
+shift[0] => LessThan1.IN8
+shift[0] => LessThan2.IN8
+shift[0] => LessThan3.IN8
+shift[0] => LessThan4.IN8
+shift[0] => LessThan5.IN8
+shift[0] => LessThan6.IN8
+shift[0] => LessThan7.IN8
+shift[0] => LessThan8.IN8
+shift[0] => LessThan9.IN8
+shift[0] => LessThan10.IN8
+shift[0] => LessThan11.IN8
+shift[0] => LessThan12.IN8
+shift[0] => LessThan13.IN8
+shift[0] => LessThan14.IN8
+shift[0] => LessThan15.IN8
+shift[1] => LessThan0.IN7
+shift[1] => LessThan1.IN7
+shift[1] => LessThan2.IN7
+shift[1] => LessThan3.IN7
+shift[1] => LessThan4.IN7
+shift[1] => LessThan5.IN7
+shift[1] => LessThan6.IN7
+shift[1] => LessThan7.IN7
+shift[1] => LessThan8.IN7
+shift[1] => LessThan9.IN7
+shift[1] => LessThan10.IN7
+shift[1] => LessThan11.IN7
+shift[1] => LessThan12.IN7
+shift[1] => LessThan13.IN7
+shift[1] => LessThan14.IN7
+shift[1] => LessThan15.IN7
+shift[2] => LessThan0.IN6
+shift[2] => LessThan1.IN6
+shift[2] => LessThan2.IN6
+shift[2] => LessThan3.IN6
+shift[2] => LessThan4.IN6
+shift[2] => LessThan5.IN6
+shift[2] => LessThan6.IN6
+shift[2] => LessThan7.IN6
+shift[2] => LessThan8.IN6
+shift[2] => LessThan9.IN6
+shift[2] => LessThan10.IN6
+shift[2] => LessThan11.IN6
+shift[2] => LessThan12.IN6
+shift[2] => LessThan13.IN6
+shift[2] => LessThan14.IN6
+shift[2] => LessThan15.IN6
+shift[3] => LessThan0.IN5
+shift[3] => LessThan1.IN5
+shift[3] => LessThan2.IN5
+shift[3] => LessThan3.IN5
+shift[3] => LessThan4.IN5
+shift[3] => LessThan5.IN5
+shift[3] => LessThan6.IN5
+shift[3] => LessThan7.IN5
+shift[3] => LessThan8.IN5
+shift[3] => LessThan9.IN5
+shift[3] => LessThan10.IN5
+shift[3] => LessThan11.IN5
+shift[3] => LessThan12.IN5
+shift[3] => LessThan13.IN5
+shift[3] => LessThan14.IN5
+shift[3] => LessThan15.IN5
+R[0] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[1] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[2] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+R[3] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|div:inst_div
+Dividendo[0] => Div0.IN3
+Dividendo[1] => Div0.IN2
+Dividendo[2] => Div0.IN1
+Dividendo[3] => Div0.IN0
+Divisor[0] => Div0.IN7
+Divisor[0] => Equal0.IN31
+Divisor[1] => Div0.IN6
+Divisor[1] => Equal0.IN30
+Divisor[2] => Div0.IN5
+Divisor[2] => Equal0.IN29
+Divisor[3] => Div0.IN4
+Divisor[3] => Equal0.IN28
+Cociente[0] <= <GND>
+Cociente[1] <= <GND>
+Cociente[2] <= <GND>
+Cociente[3] <= <GND>
+Residuo[0] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[1] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[2] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[3] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+DivisionByZeroError <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

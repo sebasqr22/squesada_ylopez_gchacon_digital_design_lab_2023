@@ -1,0 +1,9 @@
+module CompInv #(parameter N = 4) (input logic [N-1:0] A, output logic [N-1:0] R);
+
+  always @* begin
+    for (int i = 0; i < N; i = i + 1) begin
+      R[i] = ~A[i];
+    end
+	end
+	endmodule
+	
