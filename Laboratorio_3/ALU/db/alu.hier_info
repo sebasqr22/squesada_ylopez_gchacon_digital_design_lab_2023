@@ -2,14 +2,14 @@
 
 
 |alu_tb|alu:uut
-A[0] => A[0].IN6
-A[1] => A[1].IN6
-A[2] => A[2].IN6
-A[3] => A[3].IN6
-B[0] => B[0].IN6
-B[1] => B[1].IN6
-B[2] => B[2].IN6
-B[3] => B[3].IN6
+A[0] => A[0].IN8
+A[1] => A[1].IN8
+A[2] => A[2].IN8
+A[3] => A[3].IN8
+B[0] => B[0].IN8
+B[1] => B[1].IN8
+B[2] => B[2].IN8
+B[3] => B[3].IN8
 sel[0] => Mux0.IN3
 sel[0] => Mux1.IN3
 sel[0] => Mux2.IN3
@@ -26,10 +26,10 @@ sel[3] => Mux0.IN0
 sel[3] => Mux1.IN0
 sel[3] => Mux2.IN0
 sel[3] => Mux3.IN0
-OF <= NBitAdder:inst_nBitAdder.Overflow
+OF <= OF.DB_MAX_OUTPUT_PORT_TYPE
 carry_ <= <GND>
-cero <= <GND>
-neg <= <GND>
+cero <= div:inst_div.Residuo
+neg <= div:inst_div.DivisionByZeroError
 result[0] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 result[1] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 result[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
@@ -79,6 +79,27 @@ R[0] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[1] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[2] <= R.DB_MAX_OUTPUT_PORT_TYPE
 R[3] <= R.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|mult:inst_mult
+A[0] => Mult0.IN3
+A[1] => Mult0.IN2
+A[2] => Mult0.IN1
+A[3] => Mult0.IN0
+A[3] => Overflow.IN0
+B[0] => Mult0.IN7
+B[1] => Mult0.IN6
+B[2] => Mult0.IN5
+B[3] => Mult0.IN4
+B[3] => Overflow.IN1
+Producto[0] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[1] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[2] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[3] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[4] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[5] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Producto[6] <= Mult0.DB_MAX_OUTPUT_PORT_TYPE
+Overflow <= Overflow.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |alu_tb|alu:uut|NBitAdder:inst_nBitAdder
@@ -313,5 +334,29 @@ R[0] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
 R[1] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
 R[2] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
 R[3] <= temp1.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|alu_tb|alu:uut|div:inst_div
+Dividendo[0] => Div0.IN3
+Dividendo[1] => Div0.IN2
+Dividendo[2] => Div0.IN1
+Dividendo[3] => Div0.IN0
+Divisor[0] => Div0.IN7
+Divisor[0] => Equal0.IN31
+Divisor[1] => Div0.IN6
+Divisor[1] => Equal0.IN30
+Divisor[2] => Div0.IN5
+Divisor[2] => Equal0.IN29
+Divisor[3] => Div0.IN4
+Divisor[3] => Equal0.IN28
+Cociente[0] <= <GND>
+Cociente[1] <= <GND>
+Cociente[2] <= <GND>
+Cociente[3] <= <GND>
+Residuo[0] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[1] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[2] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+Residuo[3] <= residuo_temp.DB_MAX_OUTPUT_PORT_TYPE
+DivisionByZeroError <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 

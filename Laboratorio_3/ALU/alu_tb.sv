@@ -71,6 +71,15 @@ module alu_tb;
      B = 4'b0010;
 	  
 	  #(delay);
+	  
+	  
+	  // Aplica SR
+	  sel = 4'b0110;
+     A = 4'b0010;
+     B = 4'b0011;
+	  
+	  #(delay);
+	  
   end
 
 endmodule
