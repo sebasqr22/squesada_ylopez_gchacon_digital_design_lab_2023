@@ -1,15 +1,15 @@
-module alu #(parameter N = 4)(input logic [3:0] A,B, input wire [3:0] sel, output logic OF, output logic carry, output logic cero, output logic neg, output logic [3:0] result);
+module alu #(parameter N = 4)(input logic [3:0] A,B, input wire [3:0] sel, output logic OF, output logic carry_, output logic cero, output logic neg, output logic [3:0] result);
 
 
-wire [N-1:0] andR, orR, xorR;
+wire [N-1:0] andR, orR, xorR, multiR, sumaR, shiftLR, shiftRR;
 
-
-//ShiftLeft #(N)  inst_sl (.A(A), .B(B), .R(result))
-//ShiftRight #(N)  inst_sr (.A(A), .B(B) , .R(result))
 CompAnd #(N)  inst_and (.A(A), .B(B), .R(andR));
 CompXor#(N)  inst_xor (.A(A), .B(B), .R(xorR));
 CompOr#(N)  inst_or (.A(A), .B(B), .R(orR));
-
+//Mult#(N)  inst_or (.A(A), .B(B), .R(multiR));
+NBitAdder#(N)  inst_nBitAdder (.A(A), .B(B), .Sum(sumaR), .Overflow(OF));
+ShiftL#(N)  inst_sl (.A(A), .shift(B), .R(shiftLR));
+ShiftR#(N)  inst_sr (.A(A), .shift(B), .R(shiftRR));
 
 
 logic [N-1:0] tmp;
@@ -25,10 +25,16 @@ logic [N-1:0] tmp;
 				
 			4'b0010: //XOR
 				tmp = xorR;
-				/*
-			4'b0011:
-			4'b0100:
+				
+			4'b0011: //SUMA
+				tmp = sumaR;
+				
+			4'b0100: //SHIFTL
+				tmp = shiftLR;
+				
 			4'b0101:
+				tmp = shiftRR;
+				/*
 			4'b0110:
 			4'b0111: 
 			4'b1000:

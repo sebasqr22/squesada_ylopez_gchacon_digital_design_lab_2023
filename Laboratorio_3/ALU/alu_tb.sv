@@ -8,7 +8,7 @@ module alu_tb;
   logic [3:0] sel;
 
   // Señales de salida
-  logic OF, carry, cero, neg;
+  logic OF, carry_, cero, neg;
   logic [3:0] result;
 
   // Instancia del módulo alu
@@ -17,7 +17,7 @@ module alu_tb;
     .B(B),
     .sel(sel),
     .OF(OF),
-    .carry(carry),
+    .carry_(carry_),
     .cero(cero),
     .neg(neg),
     .result(result)
@@ -29,24 +29,46 @@ module alu_tb;
 	delay = 30;
 	
 	
-    // Inicializa las entradas
-	 sel = 4'b0000; // Operación AND seleccionada
+    // AND
+	 sel = 4'b0000;
     A = 4'b1010;
     B = 4'b1100;
 
 	 #(delay);
 
-    // Aplica estímulos
+    // OR
 	  sel = 4'b0001;
      A = 4'b0101;
      B = 4'b0011;
 	  
 	  #(delay);
 	  
-	  // Aplica estímulos
+	  // XOR
 	  sel = 4'b0010;
      A = 4'b0101;
      B = 4'b0011;
+	  
+	  #(delay);
+	  
+	  // Aplica SUMA
+	  sel = 4'b0011;
+     A = 4'b0100;
+     B = 4'b0010;
+	  OF = 4'b0000;
+	  
+	  #(delay);
+	  
+	  // Aplica SL
+	  sel = 4'b0100;
+     A = 4'b0010;
+     B = 4'b0001;
+	  
+	  #(delay);
+	  
+	  // Aplica SR
+	  sel = 4'b0101;
+     A = 4'b1000;
+     B = 4'b0010;
 	  
 	  #(delay);
   end

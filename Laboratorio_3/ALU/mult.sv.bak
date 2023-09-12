@@ -1,5 +1,0 @@
-module mult #(parameter N = 3) (input logic [N-1:0] A, input logic [N-1:0] B, output logic [2*N-1:0] R);
-
-assign R = A * B;
-
-endmodule
