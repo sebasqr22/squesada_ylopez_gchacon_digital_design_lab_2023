@@ -1,5 +1,5 @@
 Assembler report for alu
-Sun Sep 10 00:15:09 2023
+Tue Sep 12 00:43:27 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -10,7 +10,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: C:/Users/gabri/Desktop/Debug ALU/output_files/alu.sof
+  5. Assembler Device Options: C:/Users/gabri/OneDrive/Documents/GitHub/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/Debug ALU/output_files/alu.sof
   6. Assembler Messages
 
 
@@ -38,9 +38,9 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Sun Sep 10 00:15:09 2023 ;
+; Assembler Status      ; Successful - Tue Sep 12 00:43:27 2023 ;
 ; Revision Name         ; alu                                   ;
-; Top-level Entity Name ; CompXor                               ;
+; Top-level Entity Name ; ShiftL                                ;
 ; Family                ; Cyclone V                             ;
 ; Device                ; 5CSEMA5F31C6                          ;
 +-----------------------+---------------------------------------+
@@ -53,23 +53,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+---------+---------------+
 
 
-+-------------------------------------------------------+
-; Assembler Generated Files                             ;
-+-------------------------------------------------------+
-; File Name                                             ;
-+-------------------------------------------------------+
-; C:/Users/gabri/Desktop/Debug ALU/output_files/alu.sof ;
-+-------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                                             ;
++---------------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/gabri/OneDrive/Documents/GitHub/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/Debug ALU/output_files/alu.sof ;
++---------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/gabri/Desktop/Debug ALU/output_files/alu.sof ;
-+----------------+----------------------------------------------------------------+
-; Option         ; Setting                                                        ;
-+----------------+----------------------------------------------------------------+
-; JTAG usercode  ; 0x00AF61F1                                                     ;
-; Checksum       ; 0x00AF61F1                                                     ;
-+----------------+----------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gabri/OneDrive/Documents/GitHub/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/Debug ALU/output_files/alu.sof ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                                        ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00AF8448                                                                                                                                     ;
+; Checksum       ; 0x00AF8448                                                                                                                                     ;
++----------------+------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -78,14 +78,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Sep 10 00:15:04 2023
+    Info: Processing started: Tue Sep 12 00:43:20 2023
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off alu -c alu
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4842 megabytes
-    Info: Processing ended: Sun Sep 10 00:15:09 2023
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 4847 megabytes
+    Info: Processing ended: Tue Sep 12 00:43:27 2023
+    Info: Elapsed time: 00:00:07
     Info: Total CPU time (on all processors): 00:00:02
 
 

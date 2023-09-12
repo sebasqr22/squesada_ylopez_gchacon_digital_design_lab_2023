@@ -1,38 +1,10 @@
 m255
 K4
 z2
-!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/gabri/Desktop/Debug ALU/simulation/modelsim
-vCompXor
-DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-!s110 1694326122
-!i10b 1
-!s100 =?H[;H7jSzZU4iD[D5A;F1
-!s11b Dg1SIo80bB@j0V0VzS_@n1
-I=e8>M_>7BG6Nmggj7KQ>j2
-VDg1SIo80bB@j0V0VzS_@n1
-S1
-R0
-w1694326105
-8C:/Users/gabri/Desktop/Debug ALU/CompXor.sv
-FC:/Users/gabri/Desktop/Debug ALU/CompXor.sv
-!i122 0
-L0 1 9
-OV;L;2020.1;71
-r1
-!s85 0
-31
-!s108 1694326122.000000
-!s107 C:/Users/gabri/Desktop/Debug ALU/CompXor.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/gabri/Desktop/Debug ALU|C:/Users/gabri/Desktop/Debug ALU/CompXor.sv|
-!i113 1
-o-sv -work work
-!s92 -sv -work work {+incdir+C:/Users/gabri/Desktop/Debug ALU}
-tCvgOpt 0
-n@comp@xor
+dC:/Users/gabri/OneDrive/Documents/GitHub/squesada_ylopez_gchacon_digital_design_lab_2023/Laboratorio_3/Debug ALU/simulation/modelsim

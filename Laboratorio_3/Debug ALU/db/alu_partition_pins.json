@@ -24,7 +24,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[0]",
+					"name" : "shift[0]",
+					"strict" : false
+				},
+				{
+					"name" : "shift[3]",
+					"strict" : false
+				},
+				{
+					"name" : "shift[1]",
+					"strict" : false
+				},
+				{
+					"name" : "shift[2]",
 					"strict" : false
 				},
 				{
@@ -32,23 +44,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "B[1]",
-					"strict" : false
-				},
-				{
 					"name" : "A[2]",
 					"strict" : false
 				},
 				{
-					"name" : "B[2]",
-					"strict" : false
-				},
-				{
 					"name" : "A[3]",
-					"strict" : false
-				},
-				{
-					"name" : "B[3]",
 					"strict" : false
 				}
 			]
