@@ -79,6 +79,14 @@ module alu_tb;
      B = 4'b0011;
 	  
 	  #(delay);
+	  /*
+	  
+	  // Aplica MOD
+	  sel = 4'b1000;
+     A = 4'b0100;
+     B = 4'b0010;
+	  
+	  #(delay);*/
 	  
   end
 

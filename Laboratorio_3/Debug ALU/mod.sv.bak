@@ -1,0 +1,21 @@
+module mod #(
+  parameter N = 4  // Tamaño de los operandos
+)(
+  input wire [N-1:0] Dividendo,
+  input wire [N-1:0] Divisor,
+  output wire [N-1:0] Resultado
+);
+
+  reg [N-1:0] dividendo_temp;
+  
+  always @(*) begin
+    dividendo_temp = Dividendo;
+    
+    while (dividendo_temp >= Divisor) begin
+      dividendo_temp = dividendo_temp - Divisor;
+    end
+  end
+
+  assign Resultado = dividendo_temp;
+
+endmodule

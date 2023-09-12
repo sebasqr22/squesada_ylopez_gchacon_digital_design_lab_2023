@@ -1,0 +1,27 @@
+module mult #(parameter N = 4)(
+    input logic [N-1:0] A, 
+    input logic [N-1:0] B, 
+    output logic [N-1:0] R 
+);
+
+
+    logic [N:0] temp = 0;
+	 wire [N:0] Overflow;
+
+    integer i;
+    always @* begin
+        temp_result = 0;
+        for (i = 0; i < A; i = i + 1) begin
+				NBitAdder #(N) suma (
+					.A(temp_result), 
+					.B(b), 
+					.Sum(temp_result), 
+					.Overflow(Overflow) 
+				);
+		
+        end
+    end
+
+    assign resultado = temp_result;
+
+endmodule
