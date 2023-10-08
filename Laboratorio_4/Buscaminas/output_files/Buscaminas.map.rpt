@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Buscaminas
-Sat Oct 07 21:18:46 2023
+Sun Oct 08 00:04:20 2023
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -38,7 +38,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Sat Oct 07 21:18:46 2023       ;
+; Analysis & Elaboration Status ; Successful - Sun Oct 08 00:04:20 2023       ;
 ; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                 ; Buscaminas                                  ;
 ; Top-level Entity Name         ; Lab4_FSM                                    ;
@@ -162,34 +162,37 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 07 21:18:34 2023
+    Info: Processing started: Sun Oct 08 00:04:07 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Buscaminas -c Buscaminas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file add_random.sv
-    Info (12023): Found entity 1: add_random File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 1
+    Info (12023): Found entity 1: add_random File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add_random_tb.sv
-    Info (12023): Found entity 1: add_random_tb File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 1
+    Info (12023): Found entity 1: add_random_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bin_to_decimal.sv
-    Info (12023): Found entity 1: bin_to_decimal File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv Line: 1
+    Info (12023): Found entity 1: bin_to_decimal File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_fsm.sv
-    Info (12023): Found entity 1: Lab4_FSM File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv Line: 1
+    Info (12023): Found entity 1: Lab4_FSM File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz.sv
-    Info (12023): Found entity 1: matriz File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 1
+    Info (12023): Found entity 1: matriz File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz_tb.sv
-    Info (12023): Found entity 1: matriz_tb File: C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv Line: 1
+    Info (12023): Found entity 1: matriz_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file lab4_fsm_tb.sv
+    Info (12023): Found entity 1: Lab4_FSM_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 1
+    Info (12023): Found entity 2: top File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 56
 Info (12127): Elaborating entity "Lab4_FSM" for the top level hierarchy
-Info (144001): Generated suppressed messages file C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg
+Info (144001): Generated suppressed messages file C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg
 Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4764 megabytes
-    Info: Processing ended: Sat Oct 07 21:18:46 2023
-    Info: Elapsed time: 00:00:12
+    Info: Peak virtual memory: 4756 megabytes
+    Info: Processing ended: Sun Oct 08 00:04:20 2023
+    Info: Elapsed time: 00:00:13
     Info: Total CPU time (on all processors): 00:00:29
 
 
 +--------------------------------------------+
 ; Analysis & Elaboration Suppressed Messages ;
 +--------------------------------------------+
-The suppressed messages can be found in C:/Users/maxga/OneDrive/Documentos/Cursos CE/Taller Diseño Digital S2.2023/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg.
+The suppressed messages can be found in C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg.
 
 

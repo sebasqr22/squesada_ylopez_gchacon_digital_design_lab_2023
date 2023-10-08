@@ -1,84 +1,90 @@
 m255
 K4
 z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim
-vadd_random
-Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1696458846
+Z0 dC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim
+vLab4_FSM
+Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z2 !s110 1696745217
 !i10b 1
-!s100 I[:6CK2ohH:K=R0j26iXM2
-I4gmnbW91Sgg4GGJi_BhkT3
-Z3 VDg1SIo80bB@j0V0VzS_@n1
-!s105 add_random_sv_unit
+!s100 eYnBRkAdOc_DCY7]1XK6G1
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I[]ke;dPI<@3N[eRgb=SiQ3
+Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-w1696458788
-8C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv
-FC:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv
-L0 1
-Z4 OV;L;10.5b;63
+w1696734990
+8C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv
+FC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv
+!i122 0
+L0 1 47
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1696458846.000000
-!s107 C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv|
+!s108 1696745216.000000
+!s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv|
 !i113 1
 Z6 o-sv -work work
-Z7 !s92 -sv -work work +incdir+C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas
+Z7 !s92 -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas
 Z8 tCvgOpt 0
-vadd_random_tb
+n@lab4_@f@s@m
+vLab4_FSM_tb
 R1
 R2
 !i10b 1
-!s100 CJTI_M:bkSM3=AB;5<]DT0
-I6YAb`THZQ5B=lFfLeJ_Hi0
+!s100 aC07`P3l@T]d31f`QBnL60
 R3
-!s105 add_random_tb_sv_unit
+I65o7<bEk8Zf>fmfFMmk<50
+R4
 S1
 R0
-w1696458676
-8C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
-FC:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
-L0 1
-R4
+Z9 w1696745003
+Z10 8C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv
+Z11 FC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv
+!i122 1
+L0 1 53
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
+Z12 !s108 1696745217.000000
+!s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv|
+Z13 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv|
 !i113 1
 R6
 R7
 R8
-vbin_to_decimal
+n@lab4_@f@s@m_tb
+vtop
 R1
 R2
 !i10b 1
-!s100 @Q`=YA0^hFd5FhYh==dS83
-IdMWLAOhfIRVC3g7b1UJdE3
+!s100 kgN21`<j=b0d;TGF2iN6E3
 R3
-!s105 bin_to_decimal_sv_unit
+I>]z9iGz?n9bH1nG_Gd0I=1
+R4
 S1
 R0
-w1696457753
-8C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv
-FC:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv
-L0 1
-R4
+R9
+R10
+R11
+!i122 1
+L0 56 3
+R5
 r1
 !s85 0
 31
-R5
-!s107 C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/yarit/OneDrive/Escritorio/Tallr/Funda/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv|
+R12
+Z14 !s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv|
+R13
 !i113 1
 R6
 R7

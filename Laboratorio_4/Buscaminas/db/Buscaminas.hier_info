@@ -13,13 +13,13 @@ B => next_state.0111.DATAB
 B => Selector1.IN3
 clk => state~1.DATAIN
 rst => state~3.DATAIN
-enable_matriz <= enable_matriz.DB_MAX_OUTPUT_PORT_TYPE
-movement <= movement.DB_MAX_OUTPUT_PORT_TYPE
-click_casillas <= click_casillas.DB_MAX_OUTPUT_PORT_TYPE
-mmm_put_flag <= mmm_put_flag.DB_MAX_OUTPUT_PORT_TYPE
-put_flag <= put_flag.DB_MAX_OUTPUT_PORT_TYPE
-mmm_bomb <= mmm_bomb.DB_MAX_OUTPUT_PORT_TYPE
-game_over <= game_over.DB_MAX_OUTPUT_PORT_TYPE
-win <= win.DB_MAX_OUTPUT_PORT_TYPE
+enable_matriz << enable_matriz.DB_MAX_OUTPUT_PORT_TYPE
+movement << movement.DB_MAX_OUTPUT_PORT_TYPE
+click_casillas << click_casillas.DB_MAX_OUTPUT_PORT_TYPE
+mmm_put_flag << mmm_put_flag.DB_MAX_OUTPUT_PORT_TYPE
+put_flag << put_flag.DB_MAX_OUTPUT_PORT_TYPE
+mmm_bomb << mmm_bomb.DB_MAX_OUTPUT_PORT_TYPE
+game_over << game_over.DB_MAX_OUTPUT_PORT_TYPE
+win << win.DB_MAX_OUTPUT_PORT_TYPE
 
 
