@@ -1,0 +1,25 @@
+|Lab4_FSM
+I => Selector1.IN5
+I => Selector0.IN2
+W => next_state.1000.DATAB
+W => next_state.0010.DATAB
+C => next_state.0100.DATAB
+C => next_state.0110.DATAB
+M => Selector2.IN3
+M => Selector1.IN2
+F => next_state.0101.DATAB
+F => Selector2.IN1
+B => next_state.0111.DATAB
+B => Selector1.IN3
+clk => state~1.DATAIN
+rst => state~3.DATAIN
+enable_matriz <= enable_matriz.DB_MAX_OUTPUT_PORT_TYPE
+movement <= movement.DB_MAX_OUTPUT_PORT_TYPE
+click_casillas <= click_casillas.DB_MAX_OUTPUT_PORT_TYPE
+mmm_put_flag <= mmm_put_flag.DB_MAX_OUTPUT_PORT_TYPE
+put_flag <= put_flag.DB_MAX_OUTPUT_PORT_TYPE
+mmm_bomb <= mmm_bomb.DB_MAX_OUTPUT_PORT_TYPE
+game_over <= game_over.DB_MAX_OUTPUT_PORT_TYPE
+win <= win.DB_MAX_OUTPUT_PORT_TYPE
+
+

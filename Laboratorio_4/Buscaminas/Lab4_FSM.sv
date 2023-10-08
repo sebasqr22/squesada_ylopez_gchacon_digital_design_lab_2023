@@ -1,4 +1,4 @@
-module Lab4_FSM(input x, M, F, B, clk, rst, output Show_table, Show_squares, Flag, Bomb, Complete_matrix, put_flag, game_over, win);
+module Lab4_FSM(input I, W, C, M, F, B, clk, rst, output enable_matriz, movement, click_casillas, mmm_put_flag, put_flag, mmm_bomb, game_over, win);
 
 logic [3:0] state, next_state;
 
@@ -10,39 +10,38 @@ always_ff @(posedge clk or posedge rst)
 		
 // Estado 0000 = Inicio
 // Estado 0001 = Mostrar tablero
-// Estado 0010 = Mostrar casillas
-// Estado 0011 = bomba?
-// Estado 0100 = Matriz completa?
-// Estado 0101 = Flag?
-// Estado 0110 = Colocar flag
+// Estado 0010 = Movimiento
+// Estado 0011 = click casillas
+// Estado 0100 = Bandera?
+// Estado 0101 = colocar bandera
+// Estado 0110 = bomba?
 // Estado 0111 = Game Over
 // Estado 1000 = Win
 
 //next state logic
 always_comb
 	case(state)
-		4'b0000: if (x) next_state = 4'b0001; else next_state = 4'b0000;
-		4'b0001: if (x) next_state = 4'b0010; else next_state = 4'b0011;
-		4'b0010: if (x) next_state = 4'b0101; else next_state = 4'b0011;
-		4'b0011: if (x) next_state = 4'b0111; else next_state = 4'b0010;
-		4'b0100: if (x) next_state = 4'b1000; else next_state = 4'b0001;
-		4'b0101: if (x) next_state = 4'b0110; else next_state = 4'b0010;
-		4'b0001: next_state = 4'b0100;
-		4'b0011: next_state = 4'b0000;
-		4'b0110: next_state = 4'b0010;
+		4'b0000: if (I) next_state = 4'b0001; else next_state = 4'b0000;
+		4'b0001: if (W) next_state = 4'b1000; else next_state = 4'b0010;
+		4'b0010: if (M) next_state = 4'b0011; else next_state = 4'b0001;
+		4'b0011: if (C) next_state = 4'b0100; else next_state = 4'b0110;
+		4'b0100: if (F) next_state = 4'b0101; else next_state = 4'b0011;
+		4'b0110: if (B) next_state = 4'b0111; else next_state = 4'b0001;
+		4'b0101: next_state = 4'b0001;
+		4'b0111: next_state = 4'b0000;
 		4'b1000: next_state = 4'b0000;
 		default: next_state = 4'b0000;
 	endcase
 
 //output logic
-assign enable_matrix = (state == 4'b0001);
-assign is_win = (state == 4'b0010);
-assign bomb = (state == 4'b0011);
-//assign Complete_matrix = (state == 4'b0100);
-assign Flag = (state == 4'b0101);
-//assign put_flag = (state == 4'b0110);
-//assign game_over = (state == 4'b0111);
-//assign win = (state == 4'b1000);
+assign enable_matriz = (state == 4'b0001);
+assign movement = (state == 4'b0010);
+assign click_casillas = (state == 4'b0011);
+assign mmm_put_flag = (state == 4'b0100);
+assign put_flag = (state == 4'b0101);
+assign mmm_bomb = (state == 4'b0110);
+assign game_over = (state == 4'b0111);
+assign win = (state == 4'b1000);
 
 
 endmodule
