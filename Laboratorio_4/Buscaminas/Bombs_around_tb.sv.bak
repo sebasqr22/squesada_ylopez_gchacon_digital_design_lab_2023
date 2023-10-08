@@ -1,0 +1,40 @@
+module Bombs_around_tb();
+
+    // Definir el módulo Bombs_around
+    reg [7:0][7:0] cell_matrix;
+    wire [7:0][7:0] bombs_around_count;
+
+    // Instanciar el módulo Bombs_around
+    Bombs_around bombs_around_inst (
+        .cell_matrix(cell_matrix),
+        .bombs_around_count(bombs_around_count)
+    );
+
+    // Inicializar la matriz de ejemplo cell_matrix
+    initial begin
+        // Configurar la matriz con ejemplos (0 representa celda vacía, 1 representa bomba)
+        cell_matrix[0][0] = 1;
+        cell_matrix[0][1] = 0;
+        cell_matrix[0][2] = 0;
+        cell_matrix[0][3] = 1;
+        cell_matrix[0][4] = 1;
+        cell_matrix[0][5] = 0;
+        cell_matrix[0][6] = 0;
+        cell_matrix[0][7] = 0;
+
+        // Iniciar simulación
+        $monitor("cell_matrix[%0d][%0d] = %0d, bombs_around_count[%0d][%0d] = %0d",
+                  $time, i, j, cell_matrix[i][j], i, j, bombs_around_count[i][j]);
+        
+        // Generar patrón de prueba y verificar el resultado
+        for (i = 0; i < 8; i = i + 1) begin
+            for (j = 0; j < 8; j = j + 1) begin
+                #1;
+            end
+        end
+
+        // Finalizar la simulación
+        $finish;
+    end
+
+endmodule
