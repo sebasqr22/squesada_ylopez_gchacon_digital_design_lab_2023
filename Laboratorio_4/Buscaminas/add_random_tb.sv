@@ -31,7 +31,7 @@ module add_random_tb;
     end
     
     // Ejecutar el módulo add_random
-    $display("Agregando %0d bombas a la matriz...", BOMB_COUNT);
+    $display("Agregando %0d bombas a la matriz...", "6'b110011");
     #1; // Esperar un ciclo para que el módulo add_random procese la matriz
     $display("Matriz de salida después de agregar bombas:");
     for (int i = 0; i < 8; i = i + 1) begin
