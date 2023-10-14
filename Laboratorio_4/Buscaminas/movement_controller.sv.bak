@@ -1,0 +1,32 @@
+module movement_controller (
+  input wire btn_up,
+  input wire btn_down,
+  input wire btn_left,
+  input wire btn_right,
+  output wire move_up,
+  output wire move_down,
+  output wire move_left,
+  output wire move_right
+);
+
+reg [1:0] direction; // Registra la dirección actual (00: Inactivo, 01: Arriba, 10: Abajo, 11: Izquierda/Derecha)
+
+always @* begin
+  direction = 2'b00; // Por defecto, la dirección es inactiva (00)
+
+  if (btn_up)
+    direction = 2'b01; // Botón de arriba presionado
+
+  if (btn_down)
+    direction = 2'b10; // Botón de abajo presionado
+
+  if (btn_left || btn_right)
+    direction = 2'b11; // Botón de izquierda o derecha presionado
+end
+
+assign move_up = (direction == 2'b01);
+assign move_down = (direction == 2'b10);
+assign move_left = (direction == 2'b11 && btn_left);
+assign move_right = (direction == 2'b11 && btn_right);
+
+endmodule

@@ -10,34 +10,49 @@
 # Copying C:/Users/maxga/FPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv}
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:47:07 on Oct 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv 
-# -- Compiling module matriz
+# Start time: 22:47:07 on Oct 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv 
+# -- Compiling module add_random
+# ** Warning: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv(4): (vlog-13314) Defaulting port 'cell_matrix_in' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
 # 
 # Top level modules:
-# 	matriz
-# End time: 20:47:07 on Oct 08,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv}
+# 	add_random
+# End time: 22:47:08 on Oct 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 20:47:08 on Oct 08,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv 
-# -- Compiling module matriz_tb
+# Start time: 22:47:08 on Oct 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv 
+# -- Compiling module bin_to_decimal
 # 
 # Top level modules:
-# 	matriz_tb
-# End time: 20:47:08 on Oct 08,2023, Elapsed time: 0:00:00
+# 	bin_to_decimal
+# End time: 22:47:08 on Oct 13,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  matriz_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" matriz_tb 
-# Start time: 20:47:08 on Oct 08,2023
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 22:47:08 on Oct 13,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv 
+# -- Compiling module add_random_tb
+# 
+# Top level modules:
+# 	add_random_tb
+# End time: 22:47:08 on Oct 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  add_random_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" add_random_tb 
+# Start time: 22:47:09 on Oct 13,2023
 # Loading sv_std.std
-# Loading work.matriz_tb
-# Loading work.matriz
+# Loading work.add_random_tb
+# Loading work.add_random
+# Loading work.bin_to_decimal
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 4, found 3.
+#    Time: 0 ps  Iteration: 0  Instance: /add_random_tb/uut File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 8
+# ** Warning: (vsim-3722) C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv(8): [TFMPC] - Missing connection for port 'bomb_Count'.
 # 
 # add wave *
 # view structure
@@ -45,74 +60,28 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# Matriz después del reset:
-# matrix[0][0] = 0000000000
-# matrix[0][1] = 0000000000
-# matrix[0][2] = 0000000000
-# matrix[0][3] = 0000000000
-# matrix[0][4] = 0000000000
-# matrix[0][5] = 0000000000
-# matrix[0][6] = 0000000000
-# matrix[0][7] = 0000000000
-# matrix[1][0] = 0000000000
-# matrix[1][1] = 0000000000
-# matrix[1][2] = 0000000000
-# matrix[1][3] = 0000000000
-# matrix[1][4] = 0000000000
-# matrix[1][5] = 0000000000
-# matrix[1][6] = 0000000000
-# matrix[1][7] = 0000000000
-# matrix[2][0] = 0000000000
-# matrix[2][1] = 0000000000
-# matrix[2][2] = 0000000000
-# matrix[2][3] = 0000000000
-# matrix[2][4] = 0000000000
-# matrix[2][5] = 0000000000
-# matrix[2][6] = 0000000000
-# matrix[2][7] = 0000000000
-# matrix[3][0] = 0000000000
-# matrix[3][1] = 0000000000
-# matrix[3][2] = 0000000000
-# matrix[3][3] = 0000000000
-# matrix[3][4] = 0000000000
-# matrix[3][5] = 0000000000
-# matrix[3][6] = 0000000000
-# matrix[3][7] = 0000000000
-# matrix[4][0] = 0000000000
-# matrix[4][1] = 0000000000
-# matrix[4][2] = 0000000000
-# matrix[4][3] = 0000000000
-# matrix[4][4] = 0000000000
-# matrix[4][5] = 0000000000
-# matrix[4][6] = 0000000000
-# matrix[4][7] = 0000000000
-# matrix[5][0] = 0000000000
-# matrix[5][1] = 0000000000
-# matrix[5][2] = 0000000000
-# matrix[5][3] = 0000000000
-# matrix[5][4] = 0000000000
-# matrix[5][5] = 0000000000
-# matrix[5][6] = 0000000000
-# matrix[5][7] = 0000000000
-# matrix[6][0] = 0000000000
-# matrix[6][1] = 0000000000
-# matrix[6][2] = 0000000000
-# matrix[6][3] = 0000000000
-# matrix[6][4] = 0000000000
-# matrix[6][5] = 0000000000
-# matrix[6][6] = 0000000000
-# matrix[6][7] = 0000000000
-# matrix[7][0] = 0000000000
-# matrix[7][1] = 0000000000
-# matrix[7][2] = 0000000000
-# matrix[7][3] = 0000000000
-# matrix[7][4] = 0000000000
-# matrix[7][5] = 0000000000
-# matrix[7][6] = 0000000000
-# matrix[7][7] = 0000000000
-# ** Note: $finish    : C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv(37)
-#    Time: 110 ps  Iteration: 0  Instance: /matriz_tb
+# Matriz de entrada inicial:
+# cell_matrix_in[0] = 00
+# cell_matrix_in[1] = 00
+# cell_matrix_in[2] = 00
+# cell_matrix_in[3] = 00
+# cell_matrix_in[4] = 00
+# cell_matrix_in[5] = 00
+# cell_matrix_in[6] = 00
+# cell_matrix_in[7] = 00
+# Agregando 998962064782844244273 bombas a la matriz...
+# Matriz de salida después de agregar bombas:
+# cell_matrix_out[0] = f7
+# cell_matrix_out[1] = ff
+# cell_matrix_out[2] = f7
+# cell_matrix_out[3] = 00
+# cell_matrix_out[4] = ff
+# cell_matrix_out[5] = f7
+# cell_matrix_out[6] = ff
+# cell_matrix_out[7] = 77
+# ** Note: $finish    : C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv(42)
+#    Time: 1 ps  Iteration: 0  Instance: /add_random_tb
 # 1
-# Break in Module matriz_tb at C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv line 37
-# End time: 20:47:43 on Oct 08,2023, Elapsed time: 0:00:35
-# Errors: 0, Warnings: 0
+# Break in Module add_random_tb at C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv line 42
+# End time: 22:49:33 on Oct 13,2023, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 2
