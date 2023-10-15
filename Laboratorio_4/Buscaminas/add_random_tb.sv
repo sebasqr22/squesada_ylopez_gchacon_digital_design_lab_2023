@@ -6,7 +6,7 @@ module add_random_tb;
 
   // Instancia del módulo add_random
   add_random uut (
-    .bomb_count(6'b110011),
+    .bomb_count(110011),
     .cell_matrix_in(cell_matrix_in),
     .cell_matrix_out(cell_matrix_out)
   );
