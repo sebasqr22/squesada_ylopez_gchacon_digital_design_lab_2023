@@ -1,7 +1,8 @@
 module add_random
-(
+(	 input wire clk,
+	 input wire reset, 
     input wire [5:0] bomb_count,
-    input logic [7:0][7:0] cell_matrix_in,
+    //input logic [7:0][7:0] cell_matrix_in,
 	 output wire [5:0] bomb_Count,
     output logic [7:0][7:0] cell_matrix_out
 );
@@ -12,6 +13,8 @@ module add_random
     int pseudo_random_order[7:0];
 	 int pseudo_random_order_[7:0];
     logic [7:0][7:0] cell_matrix_variable;
+	 logic [7:0][7:0] cell_matrix_v;
+	 
 
 	 
 	 bin_to_decimal conversor (
@@ -19,11 +22,20 @@ module add_random
     .decimal_output(bomb_Count)
 	 );
 	 
-    always @(cell_matrix_in) begin
+	 matriz matriz_inst (
+      .clk(clk),                  // Conectar clk aquí
+      .reset(reset),              // Conectar reset aquí
+      .enable_matriz(1), // Ajusta enable_matriz según tus necesidades
+      .matrizOutput(cell_matrix_v)  // Conectar cell_matrix_variable aquí
+    );
+
+
+	 
+    always @(cell_matrix_v) begin
 		  bombs_added = 0; 
-        cell_matrix_variable = cell_matrix_in;
+        cell_matrix_variable = cell_matrix_v;
         pseudo_random_order = '{1, 7, 3, 5, 0, 4, 2, 6};
-		  pseudo_random_order_ = '{3, 7, 4, 5, 0, 6, 2, 1};
+		  pseudo_random_order_ = '{2, 7, 4, 3, 0, 6, 5, 1};
 
         // Variable de control para detener la adición de bombas
    
