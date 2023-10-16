@@ -15,6 +15,11 @@ module vga (input logic clk,
 
 //--------------Instancia del controlador VGA--------------------------//		
 		controladorVGA cntVGA (clk_25,H_SYNC,V_SYNC,SYNC_B,SYNC_BLANK, cuentaX,cuentaY);
+		
+	assign r = 8'd255;
+	assign g = 8'd255;
+	assign b = 8'd255;
+
 
 		
 endmodule
