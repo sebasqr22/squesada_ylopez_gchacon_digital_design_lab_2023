@@ -1,3 +1,4 @@
-module minesweeper();
+module minesweeper(
+);
 
 endmodule
