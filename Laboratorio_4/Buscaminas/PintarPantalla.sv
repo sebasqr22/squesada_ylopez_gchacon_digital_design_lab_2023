@@ -36,23 +36,23 @@ module PintarPantalla(
 	
 	CheckPos check(hs,vs,pos);
 					
-	mux_space space0(states[0],pos[0],rgb[0]);
+mux_space space0(states[0],pos[0],rgb[0]);
 mux_space space1(states[1],pos[1],rgb[1]);
 mux_space space2(states[2],pos[2],rgb[2]);
-mux_space space3(states[3],pos[3],rgb[3]);
+mux_space space3(8'b00010000,pos[3],rgb[3]);
 mux_space space4(states[4],pos[4],rgb[4]);
 mux_space space5(states[5],pos[5],rgb[5]);
-mux_space space6(states[6],pos[6],rgb[6]);
+mux_space space6(states[0],pos[6],rgb[6]);
 mux_space space7(states[7],pos[7],rgb[7]);
 
 mux_space space8(states[8],pos[8],rgb[8]);
 mux_space space9(states[9],pos[9],rgb[9]);
 mux_space space10(states[10],pos[10],rgb[10]);
 mux_space space11(states[11],pos[11],rgb[11]);
-mux_space space12(4'b0111,pos[12],rgb[12]);
+mux_space space12(states[0],pos[12],rgb[12]);
 mux_space space13(states[13],pos[13],rgb[13]);
 mux_space space14(states[14],pos[14],rgb[14]);
-mux_space space15(states[15],pos[15],rgb[15]);
+mux_space space15(states[0],pos[15],rgb[15]);
 
 mux_space space16(states[16],pos[16],rgb[16]);
 mux_space space17(states[17],pos[17],rgb[17]);

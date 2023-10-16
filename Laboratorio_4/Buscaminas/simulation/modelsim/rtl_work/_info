@@ -8,82 +8,269 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim
-vadd_random
+Z0 dC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim
+vadd_random_tb
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1697258828
+!s110 1697474078
 !i10b 1
-!s100 I1ObBQW`aSC^i?zYA[^6m0
-Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IJEQ[jk7CR[^2MagcK93?L2
-Z4 VDg1SIo80bB@j0V0VzS_@n1
+!s100 J`H^T]Z]gHFdg;;7VI0Sk0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IJ7JGT6bnMVjV2P4ZdI9Oj3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1696732354
-8C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv
-FC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv
-!i122 0
-L0 1 47
-Z6 OV;L;2020.1;71
+Z4 w1697416727
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
+!i122 9
+L0 1 45
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1697258827.000000
-!s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv|
+Z6 !s108 1697474077.000000
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
 !i113 1
 Z7 o-sv -work work
-Z8 !s92 -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas
+Z8 !s92 -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas
 Z9 tCvgOpt 0
-vadd_random_tb
+vCheckPos
 R1
-R2
+Z10 !s110 1697474077
 !i10b 1
-!s100 ?F@JXe3BMj=RFAHj@2KY13
+!s100 ]a>Z7e2?aYUH9KnB?J`[D3
+R2
+I`k_6J^fGG[o>V0hQd=k4Q2
 R3
-IjTQZl4<8kY=j_AzQ03D8j2
-R4
 S1
 R0
-w1696743375
-8C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
-FC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv
-!i122 2
-L0 1 45
-R6
-r1
-!s85 0
-31
-Z10 !s108 1697258828.000000
-!s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv|
-!i113 1
-R7
-R8
-R9
-vbin_to_decimal
-R1
-R2
-!i10b 1
-!s100 5_=CMihgRnIQCFSgB8G?M1
-R3
-IU^CU258=^Zec2]B5g0AIE2
-R4
-S1
-R0
+Z11 w1697438946
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv
+!i122 7
+L0 1 78
 R5
-8C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv
-FC:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv
-!i122 1
-L0 1 13
-R6
 r1
 !s85 0
 31
-R10
-!s107 C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv|
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv|
 !i113 1
 R7
 R8
 R9
+n@check@pos
+vclkdiv
+R1
+R10
+!i10b 1
+!s100 XeWzk5II4AAFLPm5DJ=4E0
+R2
+IES93MRT=PC_@?PeOd8N^R0
+R3
+S1
+R0
+R11
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv
+!i122 6
+L0 1 11
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv|
+!i113 1
+R7
+R8
+R9
+vControladorGrafico
+R1
+R10
+!i10b 1
+!s100 FCeoSjo8jhfAfeGFVzC`F2
+R2
+I=0oLEb8RRbz5HJj7gUi1P3
+R3
+S1
+R0
+R11
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv
+!i122 5
+L0 1 44
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv|
+!i113 1
+R7
+R8
+R9
+n@controlador@grafico
+vmainJuego
+R1
+R10
+!i10b 1
+!s100 G9LZlIzMnZaQAFEGh6jWM0
+R2
+IPYn3h?oOY@AD?UkbzKX5X2
+R3
+S1
+R0
+R11
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv
+!i122 4
+L0 1 23
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv|
+!i113 1
+R7
+R8
+R9
+nmain@juego
+vmatriz
+R1
+R10
+!i10b 1
+!s100 G4En5if0dg^?af_JlH19g1
+R2
+I=[9[zkgej1MQMRIDXLGi91
+R3
+S1
+R0
+R4
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv
+!i122 8
+L0 1 34
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv|
+!i113 1
+R7
+R8
+R9
+vmux_dibujar
+R1
+R10
+!i10b 1
+!s100 i>F?9OFgZz`9X@VnWB1M23
+R2
+InNIM?bGBfcjm;KBFTX2GZ2
+R3
+S1
+R0
+w1697473948
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv
+!i122 3
+L0 1 420
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv|
+!i113 1
+R7
+R8
+R9
+vmux_space
+R1
+R10
+!i10b 1
+!s100 U4R<G1;GVMA5^U_f^OgbJ0
+R2
+IH3bUAlZ?6=nJ]fMmz?HOE0
+R3
+S1
+R0
+R11
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv
+!i122 2
+L0 1 35
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv|
+!i113 1
+R7
+R8
+R9
+vPintarPantalla
+R1
+R10
+!i10b 1
+!s100 ^lcW`oea;E5;jX:M1F=Pc0
+R2
+I[cQIkmfKCIfz@DO_zXlP12
+R3
+S1
+R0
+w1697472400
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv
+!i122 1
+L0 1 243
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv|
+!i113 1
+R7
+R8
+R9
+n@pintar@pantalla
+vVGA_Main_Module
+R1
+R10
+!i10b 1
+!s100 3VDooAiedMZK?`67g:HJ<1
+R2
+Ie=1jcfE<gPMn0TDlDP`UL1
+R3
+S1
+R0
+R11
+8C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv
+FC:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv
+!i122 0
+L0 1 21
+R5
+r1
+!s85 0
+31
+!s108 1697474076.000000
+!s107 C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas|C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv|
+!i113 1
+R7
+R8
+R9
+n@v@g@a_@main_@module

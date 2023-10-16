@@ -56,11 +56,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "green[1]",
+					"strict" : false
+				},
+				{
+					"name" : "green[2]",
+					"strict" : false
+				},
+				{
 					"name" : "green[3]",
 					"strict" : false
 				},
 				{
 					"name" : "green[4]",
+					"strict" : false
+				},
+				{
+					"name" : "green[5]",
+					"strict" : false
+				},
+				{
+					"name" : "green[6]",
 					"strict" : false
 				},
 				{
@@ -72,11 +88,27 @@
 					"strict" : false
 				},
 				{
+					"name" : "blue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[2]",
+					"strict" : false
+				},
+				{
 					"name" : "blue[3]",
 					"strict" : false
 				},
 				{
 					"name" : "blue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "blue[6]",
 					"strict" : false
 				},
 				{

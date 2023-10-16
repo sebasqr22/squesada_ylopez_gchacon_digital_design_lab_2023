@@ -1,11 +1,11 @@
-Fitter Status : Successful - Mon Oct 16 00:47:05 2023
+Fitter Status : Successful - Mon Oct 16 12:15:18 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : Buscaminas
 Top-level Entity Name : mainJuego
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 35 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 76 / 32,070 ( < 1 % )
 Total registers : 26
 Total pins : 31 / 457 ( 7 % )
 Total virtual pins : 0

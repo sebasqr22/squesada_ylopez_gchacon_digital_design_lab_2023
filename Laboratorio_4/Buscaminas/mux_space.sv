@@ -1,14 +1,25 @@
-module mux_space( input logic [3:0]state,
+module mux_space( input logic [8:0]state,
 						input logic inpos,
 						output logic [23:0]rgb
 						);
 						
 		logic [23:0]out_rgb;
+		logic [0:0]flag;
+		assign flag = state[3];
 		//logic inpos;
 		 
 		//assign inpos = ((minx < hs)&(maxx > hs)&(miny < vs)&(maxy > vs))? 1:0;
 		
 		always @(*)
+		
+			if(flag == 1'b1)	begin
+				out_rgb <= 24'b111111110000000000000000;
+			end else	begin
+				out_rgb <= 24'b000000000000000000000000;
+			end
+		
+		
+		/*
 			begin
 				case({state})
 				
@@ -28,7 +39,7 @@ module mux_space( input logic [3:0]state,
 				default : out_rgb <= 24'b000000000000000000000000;
 				
 				endcase
-			end
+			end*/
 			
 		assign rgb = out_rgb; 
 			

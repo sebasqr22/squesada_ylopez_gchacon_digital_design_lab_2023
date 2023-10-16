@@ -1,17 +1,88 @@
-Analysis & Elaboration report for Buscaminas
-Mon Oct 16 00:08:31 2023
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Analysis & Synthesis report for Buscaminas
+Mon Oct 16 12:14:44 2023
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
-  6. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space63"
+ 10. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space62"
+ 11. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space61"
+ 12. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space60"
+ 13. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space59"
+ 14. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space58"
+ 15. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space57"
+ 16. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space56"
+ 17. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space55"
+ 18. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space54"
+ 19. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space53"
+ 20. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space52"
+ 21. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space51"
+ 22. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space50"
+ 23. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space49"
+ 24. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space48"
+ 25. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space47"
+ 26. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space46"
+ 27. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space45"
+ 28. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space44"
+ 29. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space43"
+ 30. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space42"
+ 31. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space41"
+ 32. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space40"
+ 33. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space39"
+ 34. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space38"
+ 35. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space37"
+ 36. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space36"
+ 37. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space35"
+ 38. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space34"
+ 39. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space33"
+ 40. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space32"
+ 41. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space31"
+ 42. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space30"
+ 43. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space29"
+ 44. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space28"
+ 45. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space27"
+ 46. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space26"
+ 47. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space25"
+ 48. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space24"
+ 49. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space23"
+ 50. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space22"
+ 51. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space21"
+ 52. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space20"
+ 53. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space19"
+ 54. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space18"
+ 55. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space17"
+ 56. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space16"
+ 57. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space15"
+ 58. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space14"
+ 59. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space13"
+ 60. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space12"
+ 61. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space11"
+ 62. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space10"
+ 63. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space9"
+ 64. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space8"
+ 65. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space7"
+ 66. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space6"
+ 67. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space5"
+ 68. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space4"
+ 69. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space3"
+ 70. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space2"
+ 71. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space1"
+ 72. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space0"
+ 73. Port Connectivity Checks: "matriz:matrx"
+ 74. Post-Synthesis Netlist Statistics for Top Partition
+ 75. Elapsed Time Per Partition
+ 76. Analysis & Synthesis Messages
+ 77. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -35,47 +106,36 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Oct 16 00:08:31 2023       ;
-; Quartus Prime Version         ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
-; Revision Name                 ; Buscaminas                                  ;
-; Top-level Entity Name         ; select_flag                                 ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Oct 16 12:14:44 2023       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; Buscaminas                                  ;
+; Top-level Entity Name           ; mainJuego                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 22                                          ;
+; Total pins                      ; 31                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; select_flag        ; Buscaminas         ;
+; Top-level entity name                                                           ; mainJuego          ; Buscaminas         ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -156,78 +216,1022 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+; VGA_Main_Module.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv    ;         ;
+; PintarPantalla.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv     ;         ;
+; mux_space.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv          ;         ;
+; mux_dibujar.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv        ;         ;
+; mainJuego.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv          ;         ;
+; ControladorGrafico.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv ;         ;
+; clkdiv.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv             ;         ;
+; CheckPos.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv           ;         ;
+; matriz.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv             ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                           ;
++---------------------------------------------+-------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                   ;
++---------------------------------------------+-------------------------------------------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 78                                                                      ;
+;                                             ;                                                                         ;
+; Combinational ALUT usage for logic          ; 115                                                                     ;
+;     -- 7 input functions                    ; 2                                                                       ;
+;     -- 6 input functions                    ; 38                                                                      ;
+;     -- 5 input functions                    ; 31                                                                      ;
+;     -- 4 input functions                    ; 11                                                                      ;
+;     -- <=3 input functions                  ; 33                                                                      ;
+;                                             ;                                                                         ;
+; Dedicated logic registers                   ; 22                                                                      ;
+;                                             ;                                                                         ;
+; I/O pins                                    ; 31                                                                      ;
+;                                             ;                                                                         ;
+; Total DSP Blocks                            ; 0                                                                       ;
+;                                             ;                                                                         ;
+; Maximum fan-out node                        ; VGA_Main_Module:vga|PintarPantalla:pintor|mux_dibujar:mux_dib|Equal1~13 ;
+; Maximum fan-out                             ; 24                                                                      ;
+; Total fan-out                               ; 646                                                                     ;
+; Average fan-out                             ; 3.25                                                                    ;
++---------------------------------------------+-------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                    ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name        ; Library Name ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
+; |mainJuego                     ; 115 (0)             ; 22 (0)                    ; 0                 ; 0          ; 31   ; 0            ; |mainJuego                                                               ; mainJuego          ; work         ;
+;    |VGA_Main_Module:vga|       ; 115 (0)             ; 22 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga                                           ; VGA_Main_Module    ; work         ;
+;       |ControladorGrafico:cgr| ; 35 (35)             ; 20 (20)                   ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga|ControladorGrafico:cgr                    ; ControladorGrafico ; work         ;
+;       |PintarPantalla:pintor|  ; 79 (23)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga|PintarPantalla:pintor                     ; PintarPantalla     ; work         ;
+;          |CheckPos:check|      ; 42 (42)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga|PintarPantalla:pintor|CheckPos:check      ; CheckPos           ; work         ;
+;          |mux_dibujar:mux_dib| ; 14 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga|PintarPantalla:pintor|mux_dibujar:mux_dib ; mux_dibujar        ; work         ;
+;       |clkdiv:div|             ; 1 (1)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |mainJuego|VGA_Main_Module:vga|clkdiv:div                                ; clkdiv             ; work         ;
++--------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 22    ;
+; Number of registers using Synchronous Clear  ; 20    ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 10    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space63"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space62"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space61"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space60"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space59"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space58"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space57"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space56"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space55"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space54"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space53"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space52"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space51"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space50"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space49"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space48"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space47"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space46"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space45"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space44"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space43"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space42"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space41"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space40"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space39"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space38"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space37"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space36"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space35"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space34"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space33"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space32"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space31"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space30"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space29"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space28"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space27"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space26"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space25"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space24"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space23"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space22"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space21"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space20"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space19"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space18"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space17"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space16"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space15"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space14"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space13"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space12"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space11"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space10"                                                                                  ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space9"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space8"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space7"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space6"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space5"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space4"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space3"                                                                                         ;
++-------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type  ; Severity ; Details                                                                                                                                       ;
++-------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state       ; Input ; Warning  ; Input port expression (8 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..8]" will be connected to GND. ;
+; state[7..5] ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
+; state[3..0] ; Input ; Info     ; Stuck at GND                                                                                                                                  ;
+; state[5]    ; Input ; Info     ; Stuck at VCC                                                                                                                                  ;
++-------------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space2"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space1"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space0"                                                                                   ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+; state ; Input ; Warning  ; Input port expression (1 bits) is smaller than the input port (9 bits) it drives.  Extra input bit(s) "state[8..1]" will be connected to GND. ;
++-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------+
+; Port Connectivity Checks: "matriz:matrx"        ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; enable_matriz ; Input ; Info     ; Stuck at VCC ;
++---------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 22                          ;
+;     ENA SCLR          ; 10                          ;
+;     SCLR              ; 10                          ;
+;     plain             ; 2                           ;
+; arriav_lcell_comb     ; 116                         ;
+;     arith             ; 20                          ;
+;         1 data inputs ; 20                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 94                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 4                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 11                          ;
+;         5 data inputs ; 31                          ;
+;         6 data inputs ; 38                          ;
+; boundary_port         ; 31                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.22                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 16 00:08:23 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Buscaminas -c Buscaminas --analysis_and_elaboration
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Oct 16 12:14:35 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Buscaminas -c Buscaminas
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file vga_main_module.sv
+    Info (12023): Found entity 1: VGA_Main_Module File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file pintarpantalla.sv
+    Info (12023): Found entity 1: PintarPantalla File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_space.sv
+    Info (12023): Found entity 1: mux_space File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_dibujar.sv
+    Info (12023): Found entity 1: mux_dibujar File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mainjuego.sv
+    Info (12023): Found entity 1: mainJuego File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controladorgrafico.sv
+    Info (12023): Found entity 1: ControladorGrafico File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clkdiv.sv
+    Info (12023): Found entity 1: clkdiv File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file checkpos.sv
+    Info (12023): Found entity 1: CheckPos File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bombs_around_tb.sv
+    Info (12023): Found entity 1: Bombs_around_tb File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Bombs_around_tb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file bombs_around.sv
+    Info (12023): Found entity 1: Bombs_around File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Bombs_around.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adyacentes.sv
+    Info (12023): Found entity 1: adyacentes File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/adyacentes.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add_random_tb_.sv
+    Info (12023): Found entity 1: add_random_tb_ File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb_.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file add_random_.sv
+    Info (12023): Found entity 1: add_random_ File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_.sv Line: 68
 Info (12021): Found 1 design units, including 1 entities, in source file add_random.sv
-    Info (12023): Found entity 1: add_random File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 1
+    Info (12023): Found entity 1: add_random File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add_random_tb.sv
-    Info (12023): Found entity 1: add_random_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 1
+    Info (12023): Found entity 1: add_random_tb File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bin_to_decimal.sv
-    Info (12023): Found entity 1: bin_to_decimal File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv Line: 1
+    Info (12023): Found entity 1: bin_to_decimal File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/bin_to_decimal.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab4_fsm.sv
-    Info (12023): Found entity 1: Lab4_FSM File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv Line: 1
+    Info (12023): Found entity 1: Lab4_FSM File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz.sv
-    Info (12023): Found entity 1: matriz File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 1
+    Info (12023): Found entity 1: matriz File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file matriz_tb.sv
-    Info (12023): Found entity 1: matriz_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv Line: 1
+    Info (12023): Found entity 1: matriz_tb File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz_tb.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file lab4_fsm_tb.sv
-    Info (12023): Found entity 1: Lab4_FSM_tb File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 1
-    Info (12023): Found entity 2: top File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 56
+    Info (12023): Found entity 1: Lab4_FSM_tb File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 1
+    Info (12023): Found entity 2: top File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/Lab4_FSM_tb.sv Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file moversematriz.sv
-    Info (12023): Found entity 1: MoverseMatriz File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/MoverseMatriz.sv Line: 1
+    Info (12023): Found entity 1: MoverseMatriz File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/MoverseMatriz.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file vga.sv
-    Info (12023): Found entity 1: vga File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/vga.sv Line: 1
+    Info (12023): Found entity 1: vga File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/vga.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file divisorcontadores.sv
-    Info (12023): Found entity 1: divisorContadores File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/divisorContadores.sv Line: 1
+    Info (12023): Found entity 1: divisorContadores File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/divisorContadores.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controladorvga.sv
-    Info (12023): Found entity 1: controladorVGA File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/controladorVGA.sv Line: 1
+    Info (12023): Found entity 1: controladorVGA File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/controladorVGA.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file contadorxy.sv
-    Info (12023): Found entity 1: contadorXY File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/contadorXY.sv Line: 2
+    Info (12023): Found entity 1: contadorXY File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/contadorXY.sv Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file movement_controller.sv
-    Info (12023): Found entity 1: movement_controller File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 1
+    Info (12023): Found entity 1: movement_controller File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file win_state.sv
-    Info (12023): Found entity 1: win_state File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/win_state.sv Line: 1
+    Info (12023): Found entity 1: win_state File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/win_state.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file game_over_state.sv
-    Info (12023): Found entity 1: game_over_state File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/game_over_state.sv Line: 1
+    Info (12023): Found entity 1: game_over_state File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/game_over_state.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file minesweeper.sv
-    Info (12023): Found entity 1: minesweeper File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/minesweeper.sv Line: 1
+    Info (12023): Found entity 1: minesweeper File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/minesweeper.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file select_casillas.sv
-    Info (12023): Found entity 1: select_casillas File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 1
+    Info (12023): Found entity 1: select_casillas File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file select_flag.sv
-    Info (12023): Found entity 1: select_flag File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 1
-Info (12127): Elaborating entity "select_flag" for the top level hierarchy
-Warning (10235): Verilog HDL Always Construct warning at select_flag.sv(15): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 15
-Warning (10235): Verilog HDL Always Construct warning at select_flag.sv(20): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 20
-Warning (10235): Verilog HDL Always Construct warning at select_flag.sv(21): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 21
-Warning (10240): Verilog HDL Always Construct warning at select_flag.sv(14): inferring latch(es) for variable "casilla_x", which holds its previous value in one or more paths through the always construct File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 14
-Warning (10240): Verilog HDL Always Construct warning at select_flag.sv(14): inferring latch(es) for variable "casilla_y", which holds its previous value in one or more paths through the always construct File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 14
-Info (10041): Inferred latch for "casilla_y[0]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[1]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[2]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[3]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[0]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[1]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[2]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[3]" at select_flag.sv(19) File: C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 19
-Info (144001): Generated suppressed messages file C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 4765 megabytes
-    Info: Processing ended: Mon Oct 16 00:08:31 2023
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info (12023): Found entity 1: select_flag File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at PintarPantalla.sv(13): created implicit net for "lines" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 13
+Info (12127): Elaborating entity "mainJuego" for the top level hierarchy
+Info (12128): Elaborating entity "matriz" for hierarchy "matriz:matrx" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at matriz.sv(20): truncated value with size 8 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 20
+Info (10041): Inferred latch for "cell_matrix_variable[0][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[0][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[1][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[2][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[3][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[4][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[5][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[6][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][0]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][1]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][2]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][3]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][4]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (10041): Inferred latch for "cell_matrix_variable[7][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
+Info (12128): Elaborating entity "VGA_Main_Module" for hierarchy "VGA_Main_Module:vga" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 21
+Info (12128): Elaborating entity "clkdiv" for hierarchy "VGA_Main_Module:vga|clkdiv:div" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 14
+Info (12128): Elaborating entity "ControladorGrafico" for hierarchy "VGA_Main_Module:vga|ControladorGrafico:cgr" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 16
+Info (12128): Elaborating entity "PintarPantalla" for hierarchy "VGA_Main_Module:vga|PintarPantalla:pintor" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at PintarPantalla.sv(13): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 13
+Info (12128): Elaborating entity "CheckPos" for hierarchy "VGA_Main_Module:vga|PintarPantalla:pintor|CheckPos:check" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(5): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 5
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(6): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 6
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(7): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 7
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(8): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 8
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(9): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 9
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(10): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 10
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(11): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 11
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(12): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 12
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(15): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 15
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(16): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 16
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(17): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 17
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(18): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 18
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(19): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 19
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(20): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 20
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(21): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 21
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(22): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(25): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(26): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 26
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(27): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 27
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(28): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 28
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(29): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(30): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 30
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(31): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 31
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(32): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(35): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 35
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(36): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 36
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(37): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(38): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 38
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(39): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 39
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(40): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 40
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(41): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 41
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(42): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 42
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(45): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 45
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(46): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 46
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(47): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 47
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(48): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 48
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(49): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 49
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(50): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 50
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(51): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 51
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(52): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 52
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(55): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 55
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(56): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 56
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(57): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(58): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 58
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(59): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 59
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(60): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 60
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(61): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 61
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(62): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 62
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(65): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 65
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(66): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 66
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(67): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 67
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(68): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 68
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(69): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 69
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(70): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 70
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(71): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 71
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(72): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 72
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(75): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 75
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(76): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 76
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(77): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 77
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(78): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 78
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(79): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 79
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(80): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 80
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(81): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 81
+Warning (10230): Verilog HDL assignment warning at CheckPos.sv(82): truncated value with size 32 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv Line: 82
+Info (12128): Elaborating entity "mux_space" for hierarchy "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space0" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 39
+Info (12128): Elaborating entity "mux_dibujar" for hierarchy "VGA_Main_Module:vga|PintarPantalla:pintor|mux_dibujar:mux_dib" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 241
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(344): variable "rgb0" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 344
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(345): variable "rgb1" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 345
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(346): variable "rgb2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 346
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(347): variable "rgb3" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 347
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(348): variable "rgb4" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 348
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(349): variable "rgb5" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 349
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(350): variable "rgb6" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 350
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(351): variable "rgb7" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 351
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(352): variable "rgb8" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 352
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(353): variable "rgb9" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 353
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(354): variable "rgb10" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 354
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(355): variable "rgb11" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 355
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(356): variable "rgb12" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 356
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(357): variable "rgb13" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 357
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(358): variable "rgb14" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 358
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(359): variable "rgb15" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 359
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(360): variable "rgb16" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 360
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(361): variable "rgb17" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 361
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(362): variable "rgb18" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 362
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(363): variable "rgb19" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 363
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(364): variable "rgb20" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 364
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(365): variable "rgb21" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 365
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(366): variable "rgb22" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 366
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(367): variable "rgb23" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 367
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(368): variable "rgb24" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 368
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(369): variable "rgb25" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 369
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(370): variable "rgb26" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 370
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(371): variable "rgb27" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 371
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(372): variable "rgb28" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 372
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(373): variable "rgb29" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 373
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(374): variable "rgb30" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 374
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(375): variable "rgb31" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 375
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(376): variable "rgb32" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 376
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(377): variable "rgb33" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 377
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(378): variable "rgb34" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 378
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(379): variable "rgb35" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 379
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(380): variable "rgb36" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 380
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(381): variable "rgb37" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 381
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(382): variable "rgb38" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 382
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(383): variable "rgb39" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 383
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(384): variable "rgb40" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 384
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(385): variable "rgb41" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 385
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(386): variable "rgb42" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 386
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(387): variable "rgb43" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 387
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(388): variable "rgb44" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 388
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(389): variable "rgb45" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 389
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(390): variable "rgb46" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 390
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(391): variable "rgb47" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 391
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(392): variable "rgb48" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 392
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(393): variable "rgb49" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 393
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(394): variable "rgb50" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 394
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(395): variable "rgb51" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 395
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(396): variable "rgb52" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 396
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(397): variable "rgb53" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 397
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(398): variable "rgb54" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 398
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(399): variable "rgb55" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 399
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(400): variable "rgb56" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 400
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(401): variable "rgb57" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 401
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(402): variable "rgb58" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 402
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(403): variable "rgb59" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 403
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(404): variable "rgb60" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 404
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(405): variable "rgb61" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 405
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(406): variable "rgb62" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 406
+Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(407): variable "rgb63" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 407
+Warning (10762): Verilog HDL Case Statement warning at mux_dibujar.sv(276): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 276
+Warning (12241): 64 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (286030): Timing-Driven Synthesis is running
+Info (144001): Generated suppressed messages file C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "reset" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 2
+Info (21057): Implemented 167 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 29 output pins
+    Info (21061): Implemented 136 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 136 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Mon Oct 16 12:14:44 2023
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:21
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/maxga/OneDrive/Documentos/TDD_Labs/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg.
 
 
