@@ -1,0 +1,5 @@
+module win_state(
+input win
+);
+
+endmodule

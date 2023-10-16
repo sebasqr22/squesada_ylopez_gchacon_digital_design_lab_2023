@@ -1,0 +1,5 @@
+module game_over_state(
+input game_over
+);
+
+endmodule
