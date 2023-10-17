@@ -1,8 +1,10 @@
 module matriz (
   input wire clk,
   input wire reset,
+
   input enable_matriz,
-  output logic [7:0][7:0] matrizOutput 
+  output logic [7:0][7:0] matrizOutput
+
 );
 
   // Registros para almacenar la matriz de enteros de 8x8

@@ -1,4 +1,4 @@
-module Lab4_FSM(input I, W, C, M, F, B, clk, rst, output enable_matriz, movement, click_casillas, mmm_put_flag, put_flag, mmm_bomb, game_over, win);
+module Lab4_FSM(input I, W, L, C, M, F, B, clk, rst, output enable_matriz, movement, click_casillas, mmm_put_flag, put_flag, mmm_bomb, game_over, win);
 
 logic [3:0] state, next_state;
 
@@ -27,9 +27,11 @@ always_comb
 		4'b0011: if (C) next_state = 4'b0100; else next_state = 4'b0110;
 		4'b0100: if (F) next_state = 4'b0101; else next_state = 4'b0011;
 		4'b0110: if (B) next_state = 4'b0111; else next_state = 4'b0001;
+		4'b1000: if (W) next_state = 4'b0000; else next_state = 4'b1000;
+		4'b0111: if (L) next_state = 4'b0000; else next_state = 4'b0111;
 		4'b0101: next_state = 4'b0001;
-		4'b0111: next_state = 4'b0000;
-		4'b1000: next_state = 4'b0000;
+		
+		
 		default: next_state = 4'b0000;
 	endcase
 
