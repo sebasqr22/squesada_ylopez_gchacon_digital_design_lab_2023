@@ -1,0 +1,43 @@
+module matrix_position_display (
+    input wire clk,                 // Señal de reloj
+    input wire reset,               // Señal de reset
+    output wire [6:0] seg1,        
+    output wire [6:0] seg2         
+);
+
+    reg [6:0] row_display;   // Variable para mostrar la fila
+    reg [6:0] col_display;   // Variable para mostrar la columna
+    reg [3:0] row_counter;   // Contador de fila
+    reg [3:0] col_counter;   // Contador de columna
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            // Reiniciar los contadores y los displays en el reset
+            row_counter <= 4'b0000;
+            col_counter <= 4'b0000;
+            row_display <= 7'b0000000;
+            col_display <= 7'b0000000;
+        end else begin
+            // Incrementar los contadores con el reloj
+            if (row_counter == 4'b0111) begin
+                row_counter <= 4'b0000;
+                if (col_counter == 4'b0111) begin
+                    col_counter <= 4'b0000;
+                end else begin
+                    col_counter <= col_counter + 1;
+                end
+            end else begin
+                row_counter <= row_counter + 1;
+            end
+
+            // Actualizar los displays con los valores de los contadores
+            row_display <= {1'b0, row_counter};
+            col_display <= {1'b0, col_counter};
+        end
+    end
+
+    // Conecta los displays a los contadores
+    assign seg1 = row_display;
+    assign seg2 = col_display;
+
+endmodule
