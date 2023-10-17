@@ -1,0 +1,32 @@
+module tb_matrix_position_display;
+    logic [6:0] fila;          // Entrada fila
+    logic [6:0] columna;       // Entrada columna
+    wire [6:0] salidaFila;     // Salida fila
+    wire [6:0] salidaColumna;  // Salida columna
+
+    // Instancia del módulo bajo prueba
+    matrix_position_display uut (
+        .fila(fila),
+        .columna(columna),
+        .salidaFila(salidaFila),
+        .salidaColumna(salidaColumna)
+    );
+
+    // Generación de estímulos
+    initial begin
+        $display("Iniciando simulación");
+        fila = 7'b0000001;    // Ejemplo de valor de fila (1 en binario)
+        columna = 7'b0011100; // Ejemplo de valor de columna (28 en binario)
+
+        // Simulación por un tiempo
+        #10;
+
+        // Mostrar resultados
+        $display("Valor de fila: %b", fila);
+        $display("Valor de columna: %b", columna);
+        $display("Salida de fila en siete segmentos: %b", salidaFila);
+        $display("Salida de columna en siete segmentos: %b", salidaColumna);
+
+        $finish; // Finalizar la simulación
+    end
+endmodule

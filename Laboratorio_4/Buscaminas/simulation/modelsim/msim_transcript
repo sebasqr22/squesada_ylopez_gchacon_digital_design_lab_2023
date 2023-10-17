@@ -7,133 +7,53 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/Users/maxga/FPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv}
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:36 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv 
-# -- Compiling module VGA_Main_Module
-# ** Warning: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv(4): (vlog-13314) Defaulting port 'cell_matrix' kind to 'var' rather than 'wire' due to default compile option setting of -svinputport=relaxed.
+# Start time: 23:10:15 on Oct 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv 
+# -- Compiling module movement_controller
 # 
 # Top level modules:
-# 	VGA_Main_Module
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv 
-# -- Compiling module PintarPantalla
-# 
-# Top level modules:
-# 	PintarPantalla
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_space.sv 
-# -- Compiling module mux_space
-# 
-# Top level modules:
-# 	mux_space
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv 
-# -- Compiling module mux_dibujar
-# 
-# Top level modules:
-# 	mux_dibujar
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv 
-# -- Compiling module mainJuego
-# 
-# Top level modules:
-# 	mainJuego
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/ControladorGrafico.sv 
-# -- Compiling module ControladorGrafico
-# 
-# Top level modules:
-# 	ControladorGrafico
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/clkdiv.sv 
-# -- Compiling module clkdiv
-# 
-# Top level modules:
-# 	clkdiv
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/CheckPos.sv 
-# -- Compiling module CheckPos
-# 
-# Top level modules:
-# 	CheckPos
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv 
-# -- Compiling module matriz
-# 
-# Top level modules:
-# 	matriz
-# End time: 10:34:37 on Oct 16,2023, Elapsed time: 0:00:00
+# 	movement_controller
+# End time: 23:10:15 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv}
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:34:37 on Oct 16,2023
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv 
-# -- Compiling module add_random_tb
+# Start time: 23:10:16 on Oct 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv 
+# -- Compiling module movement_controller_tb
 # 
 # Top level modules:
-# 	add_random_tb
-# End time: 10:34:38 on Oct 16,2023, Elapsed time: 0:00:01
+# 	movement_controller_tb
+# End time: 23:10:16 on Oct 16,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  add_random_tb
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" add_random_tb 
-# Start time: 10:34:38 on Oct 16,2023
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  movement_controller_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" movement_controller_tb 
+# Start time: 23:10:16 on Oct 16,2023
 # Loading sv_std.std
-# Loading work.add_random_tb
-# ** Error: (vsim-3033) Instantiation of 'add_random' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /add_random_tb File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random_tb.sv Line: 8
-#         Searched libraries:
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_hssi
-#             C:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cyclonev_pcie_hip
-#             C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim/rtl_work
-#             C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Buscaminas_run_msim_rtl_verilog.do PAUSED at line 20
-# End time: 10:36:49 on Oct 16,2023, Elapsed time: 0:02:11
-# Errors: 1, Warnings: 0
+# Loading work.movement_controller_tb
+# Loading work.movement_controller
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# outputVarX =  0, outputVarY =  0
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  7, outputVarY =  7
+# outputVarX =  7, outputVarY =  0
+# outputVarX =  0, outputVarY =  0
+# ** Note: $stop    : C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv(50)
+#    Time: 70 ps  Iteration: 0  Instance: /movement_controller_tb
+# Break in Module movement_controller_tb at C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv line 50
+# End time: 23:11:52 on Oct 16,2023, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0

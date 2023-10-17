@@ -30,7 +30,7 @@ always @(inputBtn) begin
 	
 	// Moverse a izquierda
 	else if (inputBtn == 4'b1011) begin
-		if (inputBtn == 0) begin
+		if (x == 0) begin
 			x <= x + 7;
 		end
 		else begin
@@ -41,7 +41,7 @@ always @(inputBtn) begin
 	
 	//Moverse a abajo
 	else if (inputBtn == 4'b1101) begin
-		if (inputBtn == 7) begin
+		if (y == 7) begin
 			y <= y - 7;
 		end
 		else begin
@@ -50,8 +50,8 @@ always @(inputBtn) begin
 	end
 	//Moverse a derecha
 	else if (inputBtn == 4'b1110) begin
-		if (inputBtn == 7) begin
-			x <= x + 7;
+		if (x == 7) begin
+			x <= x - 7;
 		end
 		else begin
 			x <= x + 1;

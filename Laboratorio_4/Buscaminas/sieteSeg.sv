@@ -1,5 +1,5 @@
 module sieteSeg(
-input wire [3:0] entrada, 
+input wire [2:0] entrada, 
 output reg [6:0] salida
 );
 
@@ -14,8 +14,6 @@ output reg [6:0] salida
 			5: salida = 7'b0100100;
 			6: salida = 7'b0100000;
 			7: salida = 7'b0001111;
-			8: salida = 7'b0000000;
-			9: salida = 7'b0000100;
 			default: salida = 7'b0000001;
 		endcase
 	end
