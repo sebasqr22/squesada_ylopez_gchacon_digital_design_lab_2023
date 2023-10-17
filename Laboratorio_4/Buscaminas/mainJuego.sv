@@ -2,7 +2,7 @@ module mainJuego(
 	input logic clk, reset,
 	input wire [5:0] bomb_count,
 	input logic [3:0] inputBtn, //para movement
-	input logic [1:0] inputSwitchC,
+	input wire [1:0] switches,
 	
 	
 	output logic vga_hsync,vga_vsync,sync_blank,sync_b,
@@ -10,8 +10,10 @@ module mainJuego(
 	output logic clk_25,
 	output wire [5:0] bomb_Count,
 	output logic [3:0] outY, outX, //salidas del movement controller
-	output logic [3:0] outcasillaX,
-	output logic [3:0] outcasillaY
+	output logic [3:0] outcasillaX, outcasillaXF, //salidas flags
+	output logic [3:0] outcasillaY, outcasillaYF, //salidas flags
+	
+	output reg [6:0] salidaDisplay1
 );
 
 	logic [7:0][7:0] matrix;
@@ -23,8 +25,16 @@ module mainJuego(
 	movement_controller movnt(.clk(clk), .reset(reset), 
 	.inputBtn(inpuBtn), .outX(outX), .outY(outY));//creador del movement
 	
+	interactuarCasilas interactuar(.clk(clk), .reset(reset), .x(outX), .y(outY),
+	.matrix(matrix), .switches(switches), .matrixSalida(matrix), .salidaDisplay(salidaDisplay1)); //modulo que modifica las casillas
+	
+	
+	/*
 	select_casillas slct(.clk(clk), .reset(reset), .x(outX), .y(outY), .inputSwitchC(inputSwitchC),
-	.outcasillaX(outcasillaX), .outcasillaY(outcasillaY));
+	.outcasillaX(outcasillaX), .outcasillaY(outcasillaY)); //desbloquear casilla
+	
+	select_flag slct_flag(.clk(clk), .reset(reset), .x(outX), .y(outY),
+	.inputSwitchF(inputSwitchF), .outcasillaX(outcasillaXF), .outcasillaY(outcasillaYF)); //ponerFlags */
 	
 
 	VGA_Main_Module vga(.clk(clk), .rst(reset), .cell_matrix(matrix),

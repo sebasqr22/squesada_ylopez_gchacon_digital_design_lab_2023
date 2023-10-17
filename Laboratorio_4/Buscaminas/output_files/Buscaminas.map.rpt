@@ -1,5 +1,5 @@
 Analysis & Elaboration report for Buscaminas
-Mon Oct 16 19:25:34 2023
+Mon Oct 16 21:04:55 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -74,7 +74,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  66. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space2"
  67. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space1"
  68. Port Connectivity Checks: "VGA_Main_Module:vga|PintarPantalla:pintor|mux_space:space0"
- 69. Port Connectivity Checks: "select_casillas:slct"
+ 69. Port Connectivity Checks: "interactuarCasilas:interactuar|sieteSeg:primerSeg"
  70. Port Connectivity Checks: "movement_controller:movnt"
  71. Port Connectivity Checks: "add_random:inicio|matriz:matriz_inst"
  72. Analysis & Elaboration Messages
@@ -105,7 +105,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------+
 ; Analysis & Elaboration Summary                                              ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Oct 16 19:25:34 2023       ;
+; Analysis & Elaboration Status ; Successful - Mon Oct 16 21:04:55 2023       ;
 ; Quartus Prime Version         ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                 ; Buscaminas                                  ;
 ; Top-level Entity Name         ; mainJuego                                   ;
@@ -799,13 +799,13 @@ https://fpgasoftware.intel.com/eula.
 +-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "select_casillas:slct"                                                                                                                                        ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                                                                                               ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; inputSwitchC ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (10 bits) it drives.  Extra input bit(s) "inputSwitchC[9..2]" will be connected to GND. ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Port Connectivity Checks: "interactuarCasilas:interactuar|sieteSeg:primerSeg" ;
++---------+-------+----------+--------------------------------------------------+
+; Port    ; Type  ; Severity ; Details                                          ;
++---------+-------+----------+--------------------------------------------------+
+; entrada ; Input ; Info     ; Stuck at GND                                     ;
++---------+-------+----------+--------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -832,7 +832,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 16 19:25:26 2023
+    Info: Processing started: Mon Oct 16 21:04:47 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Buscaminas -c Buscaminas --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -901,10 +901,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file select_
     Info (12023): Found entity 1: select_flag File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_flag.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sieteseg.sv
     Info (12023): Found entity 1: sieteSeg File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/sieteSeg.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file interactuarcasilas.sv
+    Info (12023): Found entity 1: interactuarCasilas File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at PintarPantalla.sv(13): created implicit net for "lines" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/PintarPantalla.sv Line: 13
-Warning (10236): Verilog HDL Implicit Net warning at mainJuego.sv(24): created implicit net for "inpuBtn" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at mainJuego.sv(26): created implicit net for "inpuBtn" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 26
 Info (12127): Elaborating entity "mainJuego" for the top level hierarchy
-Info (12128): Elaborating entity "add_random" for hierarchy "add_random:inicio" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 21
+Warning (10034): Output port "outcasillaX" at mainJuego.sv(13) has no driver File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 13
+Warning (10034): Output port "outcasillaXF" at mainJuego.sv(13) has no driver File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 13
+Warning (10034): Output port "outcasillaY" at mainJuego.sv(14) has no driver File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 14
+Warning (10034): Output port "outcasillaYF" at mainJuego.sv(14) has no driver File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 14
+Info (12128): Elaborating entity "add_random" for hierarchy "add_random:inicio" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 23
 Warning (10235): Verilog HDL Always Construct warning at add_random.sv(44): variable "bomb_Count" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 44
 Warning (10230): Verilog HDL assignment warning at add_random.sv(50): truncated value with size 4 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 50
 Info (12128): Elaborating entity "bin_to_decimal" for hierarchy "add_random:inicio|bin_to_decimal:conversor" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/add_random.sv Line: 23
@@ -975,50 +981,110 @@ Info (10041): Inferred latch for "cell_matrix_variable[7][4]" at matriz.sv(14) F
 Info (10041): Inferred latch for "cell_matrix_variable[7][5]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
 Info (10041): Inferred latch for "cell_matrix_variable[7][6]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
 Info (10041): Inferred latch for "cell_matrix_variable[7][7]" at matriz.sv(14) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/matriz.sv Line: 14
-Info (12128): Elaborating entity "movement_controller" for hierarchy "movement_controller:movnt" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 24
+Info (12128): Elaborating entity "movement_controller" for hierarchy "movement_controller:movnt" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 26
 Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(14): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 14
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(20): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
 Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(21): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 21
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(21): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 21
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(24): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 24
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(24): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 24
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(30): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 30
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(30): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 30
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(33): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 33
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(33): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 33
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(39): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 39
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(39): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 39
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(42): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 42
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(42): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 42
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(48): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 48
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(22): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 22
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(22): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 22
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(25): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 25
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(25): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 25
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(34): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 34
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(34): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 34
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(37): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 37
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(37): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 37
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(45): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 45
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(45): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 45
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(48): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 48
 Warning (10230): Verilog HDL assignment warning at movement_controller.sv(48): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 48
-Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(51): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 51
-Warning (10230): Verilog HDL assignment warning at movement_controller.sv(51): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 51
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(54): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 54
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(54): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 54
+Warning (10235): Verilog HDL Always Construct warning at movement_controller.sv(57): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 57
+Warning (10230): Verilog HDL assignment warning at movement_controller.sv(57): truncated value with size 32 to match size of target (4) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 57
 Warning (10240): Verilog HDL Always Construct warning at movement_controller.sv(13): inferring latch(es) for variable "x", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 13
 Warning (10240): Verilog HDL Always Construct warning at movement_controller.sv(13): inferring latch(es) for variable "y", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 13
-Info (10041): Inferred latch for "y[0]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "y[1]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "y[2]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "y[3]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "x[0]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "x[1]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "x[2]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (10041): Inferred latch for "x[3]" at movement_controller.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 19
-Info (12128): Elaborating entity "select_casillas" for hierarchy "select_casillas:slct" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 27
-Warning (10235): Verilog HDL Always Construct warning at select_casillas.sv(15): variable "reset" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 15
-Warning (10235): Verilog HDL Always Construct warning at select_casillas.sv(20): variable "x" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 20
-Warning (10235): Verilog HDL Always Construct warning at select_casillas.sv(21): variable "y" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 21
-Warning (10240): Verilog HDL Always Construct warning at select_casillas.sv(14): inferring latch(es) for variable "casilla_x", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 14
-Warning (10240): Verilog HDL Always Construct warning at select_casillas.sv(14): inferring latch(es) for variable "casilla_y", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 14
-Info (10041): Inferred latch for "casilla_y[0]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[1]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[2]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_y[3]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[0]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[1]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[2]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (10041): Inferred latch for "casilla_x[3]" at select_casillas.sv(19) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/select_casillas.sv Line: 19
-Info (12128): Elaborating entity "VGA_Main_Module" for hierarchy "VGA_Main_Module:vga" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 38
+Info (10041): Inferred latch for "y[0]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "y[1]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "y[2]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "y[3]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "x[0]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "x[1]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "x[2]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (10041): Inferred latch for "x[3]" at movement_controller.sv(20) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv Line: 20
+Info (12128): Elaborating entity "interactuarCasilas" for hierarchy "interactuarCasilas:interactuar" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 29
+Warning (10230): Verilog HDL assignment warning at interactuarCasilas.sv(24): truncated value with size 8 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 24
+Warning (10230): Verilog HDL assignment warning at interactuarCasilas.sv(38): truncated value with size 8 to match size of target (1) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 38
+Info (10264): Verilog HDL Case Statement information at interactuarCasilas.sv(16): all case item expressions in this case statement are onehot File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Warning (10240): Verilog HDL Always Construct warning at interactuarCasilas.sv(16): inferring latch(es) for variable "numerito", which holds its previous value in one or more paths through the always construct File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "numerito[0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "numerito[1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "numerito[2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "numerito[3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[0][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[1][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[2][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[3][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[4][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[5][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[6][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][0]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][1]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][2]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][3]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][4]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][5]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][6]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (10041): Inferred latch for "matrixSalida[7][7]" at interactuarCasilas.sv(16) File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 16
+Info (12128): Elaborating entity "sieteSeg" for hierarchy "interactuarCasilas:interactuar|sieteSeg:primerSeg" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/interactuarCasilas.sv Line: 13
+Info (12128): Elaborating entity "VGA_Main_Module" for hierarchy "VGA_Main_Module:vga" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mainJuego.sv Line: 48
 Info (12128): Elaborating entity "clkdiv" for hierarchy "VGA_Main_Module:vga|clkdiv:div" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 14
 Info (12128): Elaborating entity "ControladorGrafico" for hierarchy "VGA_Main_Module:vga|ControladorGrafico:cgr" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 16
 Info (12128): Elaborating entity "PintarPantalla" for hierarchy "VGA_Main_Module:vga|PintarPantalla:pintor" File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/VGA_Main_Module.sv Line: 18
@@ -1155,13 +1221,13 @@ Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(335): va
 Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(336): variable "rgb62" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 336
 Warning (10235): Verilog HDL Always Construct warning at mux_dibujar.sv(337): variable "rgb63" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 337
 Warning (10762): Verilog HDL Case Statement warning at mux_dibujar.sv(206): can't check case statement for completeness because the case expression has too many possible states File: C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/mux_dibujar.sv Line: 206
-Warning (12241): 66 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 65 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (144001): Generated suppressed messages file C:/Users/sebas/Documents/GitHub/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/output_files/Buscaminas.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 163 warnings
-    Info: Peak virtual memory: 4773 megabytes
-    Info: Processing ended: Mon Oct 16 19:25:34 2023
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 165 warnings
+    Info: Peak virtual memory: 4780 megabytes
+    Info: Processing ended: Mon Oct 16 21:04:55 2023
     Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:20
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +--------------------------------------------+

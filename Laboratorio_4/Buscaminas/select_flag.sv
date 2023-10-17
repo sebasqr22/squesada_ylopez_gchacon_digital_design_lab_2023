@@ -3,7 +3,7 @@ input wire clk,
 input wire reset,
 input logic [3:0] x,
 input logic [3:0] y,
-input logic [9:0] inputSwitchF,
+input wire [0:0] inputSwitchF,
 output logic [3:0] outcasillaX,
 output logic [3:0] outcasillaY
 );
@@ -16,7 +16,7 @@ always @(inputSwitchF) begin
 		casilla_x <= 0;
 		casilla_y <= 0;
 	end
-	else if (inputSwitchF == 10'b1111111011) begin
+	else if (inputSwitchF == 1'b0) begin
 		casilla_x = x;
 		casilla_y = y;
 		

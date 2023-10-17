@@ -15,6 +15,7 @@ always @(inputBtn) begin
 		x <= 0;
 		y <= 0;
 	end
+	
 	// Moverse a arriba
 	else if (inputBtn == 4'b0111) begin
 		if (y == 0) begin
@@ -24,6 +25,9 @@ always @(inputBtn) begin
 			y = y - 1;
 		end
 	end
+	
+	
+	
 	// Moverse a izquierda
 	else if (inputBtn == 4'b1011) begin
 		if (inputBtn == 0) begin
@@ -33,6 +37,8 @@ always @(inputBtn) begin
 			x = x -1;
 		end
 	end
+	
+	
 	//Moverse a abajo
 	else if (inputBtn == 4'b1101) begin
 		if (inputBtn == 7) begin
