@@ -17,11 +17,11 @@ sieteSeg sieteseg (
 always_ff @(posedge clk or posedge reset) begin
     if (reset) begin
 		if (game_over == 1) begin
-			sieteseg(1,salida);
+			//sieteseg(1,salida);
 	 end
 	 else if (inputSwitch == 10'b1111111110) begin
 		// Apagar todos los segmentos si win es 0
-			sieteseg(1,salida);
+			//sieteseg(1,salida);
 		end
 end
 end
