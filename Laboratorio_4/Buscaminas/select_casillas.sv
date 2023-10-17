@@ -1,8 +1,8 @@
 module select_casillas(
 input wire clk,
 input wire reset,
-input logic [3:0] x,
-input logic [3:0] y,
+input logic [3:0] x, //instancia de movement
+input logic [3:0] y, //instancia de movement
 input logic [9:0] inputSwitchC,
 output logic [3:0] outcasillaX,
 output logic [3:0] outcasillaY
@@ -23,6 +23,7 @@ always @(inputSwitchC) begin
 	end
 
 end
+//Casilla clickeada
 assign outcasillaX = casilla_x;
 assign outcasillaY = casilla_y;
 
