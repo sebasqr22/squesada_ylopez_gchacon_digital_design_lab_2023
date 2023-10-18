@@ -1,0 +1,62 @@
+module Bombs_around (
+    input wire [7:0][7:0] cell_matrix,
+    output wire [7:0][7:0] bombs_around_count
+);
+
+    reg [7:0][7:0] count;
+
+    integer i;
+    integer j;
+
+    always @* begin
+        for (i = 0; i < 8; i = i + 1) begin
+            for (j = 0; j < 8; j = j + 1) begin
+                count[i][j] = 4'b0; // Inicializar el contador
+
+                // Verificar las celdas adyacentes en todas las direcciones
+                // Arriba
+                if (i > 0) begin
+                    if (cell_matrix[i-1][j] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Abajo
+                if (i < 7) begin
+                    if (cell_matrix[i+1][j] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Izquierda
+                if (j > 0) begin
+                    if (cell_matrix[i][j-1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Derecha
+                if (j < 7) begin
+                    if (cell_matrix[i][j+1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Diagonal superior izquierda
+                if (i > 0 && j > 0) begin
+                    if (cell_matrix[i-1][j-1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Diagonal superior derecha
+                if (i > 0 && j < 7) begin
+                    if (cell_matrix[i-1][j+1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Diagonal inferior izquierda
+                if (i < 7 && j > 0) begin
+                    if (cell_matrix[i+1][j-1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+
+                // Diagonal inferior derecha
+                if (i < 7 && j < 7) begin
+                    if (cell_matrix[i+1][j+1] == 4'd1) count[i][j] = count[i][j] + 1;
+                end
+            end
+        end
+    end
+
+    assign bombs_around_count = count;
+
+endmodule

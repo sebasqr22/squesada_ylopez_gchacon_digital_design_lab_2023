@@ -1,0 +1,25 @@
+module select_flag(
+input wire clk,
+input wire reset,
+input logic [9:0] inputSwitch,
+output logic [3:0] outcasillaX,
+output logic [3:0] outcasillaY
+);
+
+logic [3:0] casilla_x = 0;
+logic [3:0] casilla_y = 0;
+
+always @(inputBtn) begin
+	if (reset) begin
+		x <= 0;
+		y <= 0;
+	end
+	else if (inputSwitch == 10'b1111110111) begin
+		assign outcasillaX = casilla_x;
+		assign outcasillaY = casilla_y;
+	
+	end
+
+end
+
+endmodule

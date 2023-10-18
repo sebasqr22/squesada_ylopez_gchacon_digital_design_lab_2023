@@ -1,0 +1,36 @@
+|movement_controller
+clk => ~NO_FANOUT~
+reset => x[3].ACLR
+reset => x[2].ACLR
+reset => x[1].ACLR
+reset => x[0].ACLR
+reset => y[3].ACLR
+reset => y[2].ACLR
+reset => y[1].ACLR
+reset => y[0].ACLR
+inputBtn[0] => Equal0.IN2
+inputBtn[0] => Equal2.IN2
+inputBtn[0] => Equal4.IN2
+inputBtn[0] => Equal6.IN3
+inputBtn[1] => Equal0.IN1
+inputBtn[1] => Equal2.IN1
+inputBtn[1] => Equal4.IN3
+inputBtn[1] => Equal6.IN2
+inputBtn[2] => Equal0.IN0
+inputBtn[2] => Equal2.IN3
+inputBtn[2] => Equal4.IN1
+inputBtn[2] => Equal6.IN1
+inputBtn[3] => Equal0.IN3
+inputBtn[3] => Equal2.IN0
+inputBtn[3] => Equal4.IN0
+inputBtn[3] => Equal6.IN0
+outX[0] <= x[0].DB_MAX_OUTPUT_PORT_TYPE
+outX[1] <= x[1].DB_MAX_OUTPUT_PORT_TYPE
+outX[2] <= x[2].DB_MAX_OUTPUT_PORT_TYPE
+outX[3] <= x[3].DB_MAX_OUTPUT_PORT_TYPE
+outY[0] <= y[0].DB_MAX_OUTPUT_PORT_TYPE
+outY[1] <= y[1].DB_MAX_OUTPUT_PORT_TYPE
+outY[2] <= y[2].DB_MAX_OUTPUT_PORT_TYPE
+outY[3] <= y[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

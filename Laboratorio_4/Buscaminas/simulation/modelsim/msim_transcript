@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do Buscaminas_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/Users/maxga/FPGA/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:15 on Oct 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller.sv 
+# -- Compiling module movement_controller
+# 
+# Top level modules:
+# 	movement_controller
+# End time: 23:10:15 on Oct 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -sv -work work +incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas {C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:10:16 on Oct 16,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas" C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv 
+# -- Compiling module movement_controller_tb
+# 
+# Top level modules:
+# 	movement_controller_tb
+# End time: 23:10:16 on Oct 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  movement_controller_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" movement_controller_tb 
+# Start time: 23:10:16 on Oct 16,2023
+# Loading sv_std.std
+# Loading work.movement_controller_tb
+# Loading work.movement_controller
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# outputVarX =  0, outputVarY =  0
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  0, outputVarY =  7
+# outputVarX =  7, outputVarY =  7
+# outputVarX =  7, outputVarY =  0
+# outputVarX =  0, outputVarY =  0
+# ** Note: $stop    : C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv(50)
+#    Time: 70 ps  Iteration: 0  Instance: /movement_controller_tb
+# Break in Module movement_controller_tb at C:/Users/maxga/OneDrive/Documentos/TDD_Labs2/squesada_ylopez_mgarro_digital_design_lab_2023/Laboratorio_4/Buscaminas/movement_controller_tb.sv line 50
+# End time: 23:11:52 on Oct 16,2023, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0
